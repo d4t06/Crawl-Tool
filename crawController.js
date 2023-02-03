@@ -26,12 +26,13 @@ const scrawController = async (browserInstance) => {
       //  const selectedproductLinks = productLinks.filter((link, index) => indexs.some(i => i == index) )
       //  console.log(selectedproductLinks)
       const productLinks = [
-         { href: "https://www.thegioididong.com/dtdd/samsung-galaxy-z-flip4" },
+         { href: "https://www.thegioididong.com/dtdd/iphone-11" },
       ];
 
       const productsDetail = await crawServices.crawProductsDetail(
          browser,
-         "https://www.thegioididong.com/dtdd/samsung-galaxy-z-flip4"
+         "https://www.thegioididong.com/dtdd/iphone-11",
+         "galaxy-z-flip-4"
       );
 
       //  console.log("detail",productsDetail)
