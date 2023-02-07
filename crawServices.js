@@ -158,10 +158,10 @@ class crawServices {
       });
       productDetail.params = params;
 
-      await browser.close();
+      await page.close();
       console.log("dong tab");
-      console.log(productDetail);
-      return;
+      // console.log(productDetail);
+      return productDetail;
    };
 }
 

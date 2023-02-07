@@ -27,15 +27,30 @@ const scrawController = async (browserInstance) => {
       //  console.log(selectedproductLinks)
       const productLinks = [
          { href: "https://www.thegioididong.com/dtdd/iphone-11" },
+         { href: "https://www.thegioididong.com/dtdd/iphone-11" },
       ];
 
-      const productsDetail = await crawServices.crawProductsDetail(
-         browser,
-         "https://www.thegioididong.com/dtdd/iphone-11",
-         "galaxy-z-flip-4"
-      );
+      // const productsDetail = await crawServices.crawProductsDetail(
+      //    browser,
+      //    "https://www.thegioididong.com/dtdd/iphone-11",
+      //    "galaxy-z-flip-4"
+      // );
+      let productDetails = [];
+      for (let link of productLinks) {
+         console.log(link);
+         const detail = await crawServices.crawProductsDetail(
+            browser,
+            link.href,
+            "galaxy-z-flip-4"
+         );
+         productDetails.push(detail);
+      }
+      browser.close();
+      fs.writeFile("details.json", JSON.stringify(productDetails), (err) => {
+         if (err) console.log("ghi data vao file that bai", err);
+      });
 
-      //  console.log("detail",productsDetail)
+      console.log(productDetails);
    } catch (error) {
       console.log(error);
       console.log(">>> loi browser controller");
