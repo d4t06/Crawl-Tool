@@ -7,50 +7,62 @@ const scrawController = async (browserInstance) => {
       // await page.goto("https://chiasenhac.vn/nhac-hot.html")
 
       // producst info
-      // const products = await crawServices.crawProduct(
-      //    browser,
-      //    "https://www.thegioididong.com/dtdd#c=42&o=9&pi=1"
-      // );
+      const products = await crawServices.crawProduct(
+         browser,
+         "https://www.thegioididong.com/dtdd"
+      );
       // fs.writeFile("products.json", JSON.stringify(products), (err) => {
       //    if (err) console.log("ghi data vao file that bai", err);
       // });
 
       // product links
       // const productLinks = await crawServices.crawProductLinks(
-      //   browser,
-      //   "https://www.thegioididong.com/dtdd"
+      //    browser,
+      //    "https://www.thegioididong.com/dtdd"
       // );
 
       // products detail
       //  const indexs = [0,1]
       //  const selectedproductLinks = productLinks.filter((link, index) => indexs.some(i => i == index) )
       //  console.log(selectedproductLinks)
-      const productLinks = [
-         { href: "https://www.thegioididong.com/dtdd/iphone-11" },
-         { href: "https://www.thegioididong.com/dtdd/iphone-11" },
-      ];
+      // const productLinks = [
+      //    { href: "https://www.thegioididong.com/dtdd/iphone-11" },
+      //    { href: "https://www.thegioididong.com/dtdd/iphone-11" },
+      // ];
 
       // const productsDetail = await crawServices.crawProductsDetail(
       //    browser,
       //    "https://www.thegioididong.com/dtdd/iphone-11",
       //    "galaxy-z-flip-4"
       // );
-      let productDetails = [];
-      for (let link of productLinks) {
-         console.log(link);
-         const detail = await crawServices.crawProductsDetail(
-            browser,
-            link.href,
-            "galaxy-z-flip-4"
-         );
-         productDetails.push(detail);
-      }
+      // let i = 0;
+      // let productDetails = [];
+      // for (let item of products) {
+      //    if (item.pre_order) continue;
+      //    if (item.href === "iphone-14-plus") continue;
+      //    // if (i >= 2) continue;
+      //    // i++;
+      //    console.log(">>> truy cap " + item.href);
+      //    const detail = await crawServices.crawProductsDetail(
+      //       browser,
+      //       `https://www.thegioididong.com/dtdd/${item.href}`,
+      //       item.href
+      //    );
+      //    productDetails.push(detail);
+      // }
+      // const detail = await crawServices.crawProductsDetail(
+      //    browser,
+      //    `https://www.thegioididong.com/dtdd/${item.href}`,
+      //    item.key
+      // );
       browser.close();
-      fs.writeFile("details.json", JSON.stringify(productDetails), (err) => {
+      console.log("dong trinh duyet");
+
+      fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
          if (err) console.log("ghi data vao file that bai", err);
       });
 
-      console.log(productDetails);
+      // console.log(productLinks);
    } catch (error) {
       console.log(error);
       console.log(">>> loi browser controller");
