@@ -1,3 +1,9 @@
+function delay() {
+   return new Promise(function (resolve) {
+      setTimeout(resolve, 8000);
+   });
+}
+
 class crawServices {
    crawProduct = async (browser, url) => {
       try {
@@ -182,6 +188,35 @@ class crawServices {
          return productDetail;
       } catch (error) {
          console.log("loi trong qua trinh cao ", error);
+      }
+   };
+   crawImage = async (browser, url) => {
+      try {
+         const page = await browser.newPage();
+         console.log(">>> mo tab moi", url);
+         await page.goto(url);
+         // await page.evaluate(scrollToBottom);
+
+         const Selector = ".listproduct";
+         await page.waitForSelector(Selector);
+         // await page.evaluate(delay);
+
+         // lay banner
+         const images = await page.$$eval(".box-quicklink__item", (els) => {
+            let imageList = "";
+            els.forEach((el) => {
+               const imgEl = el.querySelector("img");
+               imageList +=
+                  "https:" + (imgEl ? imgEl.getAttribute("src") : "") + "and";
+            });
+            return imageList;
+         });
+         await page.close();
+         console.log("dong tab");
+         console.log(images);
+         // return productDetail;
+      } catch (error) {
+         console.log("loi trong qua trinh craw ", error);
       }
    };
 }

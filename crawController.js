@@ -1,16 +1,16 @@
 const crawServices = require("./crawServices");
+const FPTcrawServices = require("./fpt_crawServices");
 const fs = require("fs");
 const scrawController = async (browserInstance) => {
+   const tddd = "https://www.thegioididong.com/laptop-ldp";
+   const fpt = "https://fptshop.com.vn/may-tinh-xach-tay";
    try {
       let browser = await browserInstance;
       // let page = await browser.newPage()
       // await page.goto("https://chiasenhac.vn/nhac-hot.html")
 
       // producst info
-      const products = await crawServices.crawProduct(
-         browser,
-         "https://www.thegioididong.com/dtdd"
-      );
+      const products = await crawServices.crawImage(browser, tddd);
       // fs.writeFile("products.json", JSON.stringify(products), (err) => {
       //    if (err) console.log("ghi data vao file that bai", err);
       // });
@@ -58,13 +58,14 @@ const scrawController = async (browserInstance) => {
       browser.close();
       console.log("dong trinh duyet");
 
-      fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
-         if (err) console.log("ghi data vao file that bai", err);
-      });
+      // fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
+      //    if (err) console.log("ghi data vao file that bai", err);
+      // });
 
       // console.log(productLinks);
    } catch (error) {
       console.log(error);
+      browser.close();
       console.log(">>> loi browser controller");
    }
 };

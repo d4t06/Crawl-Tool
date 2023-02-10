@@ -2,7 +2,7 @@
    {
       "href": "acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006",
       "name": "Acer TravelMate B3 TMB311 31 C2HB N4020 (NX.VNFSV.006)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/265015/TimerThumb/acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-(18).jpg",
       "feature": "RAM 4 GB&SSD 128 GB&",
       "old_price": "9990000",
@@ -16,7 +16,7 @@
    {
       "href": "apple-macbook-air-m1-2020-z124000de",
       "name": "MacBook Air M1 2020 7-core GPU",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/239552/macbook-air-m1-2020-gold-600x600.jpg",
       "feature": "RAM 16 GB&SSD 256 GB&",
       "old_price": "33490000",
@@ -30,7 +30,7 @@
    {
       "href": "lenovo-ideapad-3-15iau7-i3-82rk005lvn",
       "name": "Lenovo Ideapad 3 15IAU7 i3 1215U (82RK005LVN)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/287769/lenovo-ideapad-3-15iau7-i3-82rk005lvn-281122-051953-600x600.jpg",
       "feature": "RAM 8 GB&SSD 256 GB&",
       "old_price": "13890000",
@@ -44,7 +44,7 @@
    {
       "href": "asus-tuf-gaming-fx506lhb-i5-hn188w",
       "name": "Asus TUF Gaming F15 FX506LHB i5 10300H (HN188W)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/279259/asus-tuf-gaming-fx506lhb-i5-hn188w-600x600.jpeg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "20990000",
@@ -58,7 +58,7 @@
    {
       "href": "asus-vivobook-15x-oled-a1503za-i5-l1290w",
       "name": "Asus VivoBook 15X OLED A1503ZA i5 12500H (L1290W)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/284257/asus-vivobook-15x-oled-a1503za-i5-l1290w-040722-050332-600x600.jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "21490000",
@@ -72,7 +72,7 @@
    {
       "href": "dell-gaming-g15-5515-r5-p105f004cgr",
       "name": "Dell Gaming G15 5515 R5 5600H (P105F004CGR)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/260170/dell-gaming-g15-5515-r5-p105f004cgr-291121-115616-600x600.jpg",
       "feature": "RAM 8 GB&SSD 256 GB&",
       "old_price": "22990000",
@@ -86,7 +86,7 @@
    {
       "href": "msi-modern-14-b11mou-i3-1027vn",
       "name": "MSI Modern 14 B11MOU i3 1115G4 (1027VN)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/266898/msi-modern-14-b11mou-i3-1115g4-8gb-600x600.jpg",
       "feature": "RAM 8 GB&SSD 256 GB&",
       "old_price": "13790000",
@@ -100,7 +100,7 @@
    {
       "href": "lenovo-ideapad-3-15iau7-i5-82rk001pvn",
       "name": "Lenovo Ideapad 3 15IAU7 i5 1235U (82RK001PVN)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/291738/lenovo-ideapad-3-15iau7-i5-82rk001pvn-281122-052020-600x600.jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "17990000",
@@ -114,7 +114,7 @@
    {
       "href": "hp-15s-fq2662tu-i3-6k795pa",
       "name": "HP 15s fq2662TU i3 1115G4 (6K795PA)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/284190/hp-15s-fq2662tu-i3-6k795pa-180123-093817-600x600.jpg",
       "feature": "RAM 4 GB&SSD 256 GB&",
       "old_price": "12890000",
@@ -128,7 +128,7 @@
    {
       "href": "acer-aspire-7-gaming-a715-42g-r4xx-r5-nhqaysv008",
       "name": "Acer Aspire 7 Gaming A715 42G R4XX R5 5500U (NH.QAYSV.008)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/268775/TimerThumb/acer-aspire-7-gaming-a715-42g-r4xx-r5-nhqaysv008-(48).jpg",
       "feature": "RAM 8 GB&SSD 256 GB&",
       "old_price": "18490000",
@@ -142,7 +142,7 @@
    {
       "href": "apple-macbook-pro-13-inch-m2-2022",
       "name": "MacBook Pro M2 2022",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/282828/apple-macbook-pro-13-inch-m2-2022-xam-600x600.jpg",
       "feature": "RAM 8 GB&SSD 256 GB&",
       "old_price": "35990000",
@@ -156,7 +156,7 @@
    {
       "href": "acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006",
       "name": "Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/263980/TimerThumb/acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-(46).jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "22490000",
@@ -170,7 +170,7 @@
    {
       "href": "dell-gaming-g15-5511-i5-70266676",
       "name": "Dell Gaming G15 5511 i5 11400H (70266676)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/264354/dell-gaming-g15-5511-i5-70266676-290322-110237-600x600.jpg",
       "feature": "RAM 8 GB&SSD 256 GB&",
       "old_price": "27490000",
@@ -184,7 +184,7 @@
    {
       "href": "itel-able-1s-n4020-71006300027",
       "name": "itel ABLE 1S N4020 (71006300027)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/265523/itel-able-1s-n4020-71006300027-thumb-600x600.jpg",
       "feature": "RAM 4 GB&SSD 256 GB&",
       "old_price": "8990000",
@@ -198,7 +198,7 @@
    {
       "href": "dell-vostro-3510-i5-p112f002bbl",
       "name": "Dell Vostro 3510 i5 1135G7 (P112F002BBL)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/266280/dell-vostro-3510-i5-1135g7-8gb-512gb-2gb-600x600.jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "22990000",
@@ -212,7 +212,7 @@
    {
       "href": "acer-aspire-7-gaming-a715-43g-r8ga-r5-nhqhdsv002",
       "name": "Acer Aspire 7 Gaming A715 43G R8GA R5 5625U (NH.QHDSV.002)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/285961/TimerThumb/acer-aspire-7-gaming-a715-43g-r8ga-r5-nhqhdsv002-(22).jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "21990000",
@@ -226,7 +226,7 @@
    {
       "href": "msi-gaming-gf63-thin-11ud-i7-648vn",
       "name": "MSI Gaming GF63 Thin 11UD i7 11800H (648VN)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/273213/msi-gaming-gf63-thin-11ud-i7-11800h-8gb-512gb-4gb-rtx3050ti-600x600.jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "26490000",
@@ -240,7 +240,7 @@
    {
       "href": "dell-vostro-5410-i5-v4i5214w1",
       "name": "Dell Vostro 5410 i5 11320H (V4I5214W1)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/267695/dell-vostro-5410-i5-11320h-8gb-512gb-office-h-s-600x600.jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "23090000",
@@ -254,7 +254,7 @@
    {
       "href": "hp-15s-fq5078tu-i5-6k798pa",
       "name": "HP 15s fq5078TU i5 1235U (6K798PA)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/284139/hp-15s-fq5078tu-i5-6k798pa-010922-041140-600x600.jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "18190000",
@@ -268,7 +268,7 @@
    {
       "href": "acer-aspire-3-a315-58-52kt-i5-nxam0sv006",
       "name": "Acer Aspire 3 A315 58 52KT i5 1135G7 (NX.AM0SV.006)",
-      "categoty": "laptop",
+      "category": "laptop",
       "image": "https://cdn.tgdd.vn/Products/Images/44/285763/TimerThumb/acer-aspire-3-a315-58-52kt-i5-nxam0sv006-(6).jpg",
       "feature": "RAM 8 GB&SSD 512 GB&",
       "old_price": "16990000",

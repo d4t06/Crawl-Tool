@@ -4,7 +4,7 @@ const startBrowser = async () => {
    let browser;
    try {
       browser = await puppeteer.launch({
-         headless: true,
+         headless: false,
          defaultViewport: null,
          args: ["--window-size=1000,800"],
       });
