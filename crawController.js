@@ -2,7 +2,10 @@ const crawServices = require("./crawServices");
 const FPTcrawServices = require("./fpt_crawServices");
 const fs = require("fs");
 const scrawController = async (browserInstance) => {
-   const tddd = "https://www.thegioididong.com/laptop-ldp";
+   const tddd = {
+      dtdd: "https://www.thegioididong.com/dtdd#c=42&o=9&pi=1",
+      laptop: "https://www.thegioididong.com/laptop#c=44&o=9&pi=1",
+   };
    const fpt = "https://fptshop.com.vn/may-tinh-xach-tay";
    try {
       let browser = await browserInstance;
@@ -10,7 +13,7 @@ const scrawController = async (browserInstance) => {
       // await page.goto("https://chiasenhac.vn/nhac-hot.html")
 
       // producst info
-      const products = await crawServices.crawImage(browser, tddd);
+      const products = await crawServices.crawProduct(browser, tddd["dtdd"]);
       // fs.writeFile("products.json", JSON.stringify(products), (err) => {
       //    if (err) console.log("ghi data vao file that bai", err);
       // });
@@ -58,9 +61,11 @@ const scrawController = async (browserInstance) => {
       browser.close();
       console.log("dong trinh duyet");
 
-      // fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
-      //    if (err) console.log("ghi data vao file that bai", err);
-      // });
+      // console.log(products);
+
+      fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
+         if (err) console.log("ghi data vao file that bai", err);
+      });
 
       // console.log(productLinks);
    } catch (error) {

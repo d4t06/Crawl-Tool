@@ -27,8 +27,8 @@ class crawServices {
                   (item) => (featureElData += item.innerText + "&")
                );
 
-               const curPriceEl = el.querySelector(".price");
-               const oldPriceEl = el.querySelector("p.price-old");
+               const priceEl = el.querySelector(".price-old");
+               const discountEl = el.querySelector(".percent");
 
                const imageLabelEl = el.querySelector(
                   ".item-img > img.lbliconimg"
@@ -40,14 +40,15 @@ class crawServices {
                const giftEl = el.querySelector(".item-gift");
                return {
                   href: href.slice(6),
+                  brand: nameEl.innerText.split(" ")[0],
                   name: nameEl.innerText,
-                  category: "mobile",
+                  category: "dtdd",
                   image:
                      imageEl.getAttribute("src") ||
                      imageEl.getAttribute("data-src"),
                   feature: featureElData ? featureElData : null,
-                  old_price: oldPriceEl ? oldPriceEl.innerText : null,
-                  cur_price: curPriceEl ? curPriceEl.innerText : "curPrice",
+                  price: priceEl ? priceEl.innerText : "curPrice",
+                  discount: discountEl ? discountEl.innerText : null,
                   product_label: imageLabelEl
                      ? imageLabelEl.getAttribute("src")
                      : null,
