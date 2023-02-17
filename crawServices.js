@@ -1,6 +1,6 @@
 function delay() {
    return new Promise(function (resolve) {
-      setTimeout(resolve, 8000);
+      setTimeout(resolve, 3000);
    });
 }
 
@@ -11,7 +11,8 @@ class crawServices {
 
          console.log(">>> mo tab moi");
          await page.goto(url);
-         await page.setViewport({ width: 1080, height: 1024 });
+         await page.evaluate(delay);
+         // await page.setViewport({ width: 1080, height: 1024 });
 
          const Selector = ".listproduct";
          await page.waitForSelector(Selector);
@@ -27,8 +28,8 @@ class crawServices {
                   (item) => (featureElData += item.innerText + "&")
                );
 
-               const priceEl = el.querySelector(".price-old");
-               const discountEl = el.querySelector(".percent");
+               const oldPriceEl = el.querySelector(".price-old");
+               const curPriceEl = el.querySelector(".price");
 
                const imageLabelEl = el.querySelector(
                   ".item-img > img.lbliconimg"
@@ -47,14 +48,18 @@ class crawServices {
                      imageEl.getAttribute("src") ||
                      imageEl.getAttribute("data-src"),
                   feature: featureElData ? featureElData : null,
-                  price: priceEl ? priceEl.innerText : "curPrice",
-                  discount: discountEl ? discountEl.innerText : null,
+                  old_price: oldPriceEl
+                     ? +oldPriceEl.innerText.replaceAll(".", "").slice(0, -1)
+                     : null,
+                  cur_price: curPriceEl
+                     ? +curPriceEl.innerText.replaceAll(".", "").slice(0, -1)
+                     : 0,
                   product_label: imageLabelEl
                      ? imageLabelEl.getAttribute("src")
                      : null,
-                  intallment: intallmentEl ? true : false,
-                  label: labelEl ? labelEl.innerText : false,
-                  gift: giftEl ? giftEl.innerText : null,
+                  intallment: intallmentEl ? true : null,
+                  label: labelEl ? labelEl.innerText : null,
+                  gift: giftEl ? giftEl.innerText.replaceAll(".", "") : null,
                   pre_order: preOrderEl ? preOrderEl.innerText : false,
                };
             });

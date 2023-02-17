@@ -13,7 +13,7 @@ const scrawController = async (browserInstance) => {
       // await page.goto("https://chiasenhac.vn/nhac-hot.html")
 
       // producst info
-      const products = await crawServices.crawProduct(browser, tddd["dtdd"]);
+      const products = await crawServices.crawProduct(browser, tddd["laptop"]);
       // fs.writeFile("products.json", JSON.stringify(products), (err) => {
       //    if (err) console.log("ghi data vao file that bai", err);
       // });
@@ -63,7 +63,7 @@ const scrawController = async (browserInstance) => {
 
       // console.log(products);
 
-      fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
+      fs.writeFile("laptop.json", JSON.stringify(products), (err) => {
          if (err) console.log("ghi data vao file that bai", err);
       });
 
