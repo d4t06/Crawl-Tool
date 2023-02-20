@@ -3,6 +3,22 @@ function delay() {
       setTimeout(resolve, 3000);
    });
 }
+async function scrollToBottom() {
+   await new Promise((resolve) => {
+      const distance = 500; // should be less than or equal to window.innerHeight
+      const delay = 200;
+      const timer = setInterval(() => {
+         document.scrollingElement.scrollBy(0, distance);
+         if (
+            document.scrollingElement.scrollTop + window.innerHeight >=
+            document.scrollingElement.scrollHeight / 2
+         ) {
+            clearInterval(timer);
+            resolve();
+         }
+      }, delay);
+   });
+}
 
 class crawServices {
    crawProduct = async (browser, url) => {
@@ -107,23 +123,6 @@ class crawServices {
       }
    };
    crawProductsDetail = async (browser, url, key) => {
-      async function scrollToBottom() {
-         await new Promise((resolve) => {
-            const distance = 500; // should be less than or equal to window.innerHeight
-            const delay = 200;
-            const timer = setInterval(() => {
-               document.scrollingElement.scrollBy(0, distance);
-               if (
-                  document.scrollingElement.scrollTop + window.innerHeight >=
-                  document.scrollingElement.scrollHeight / 2
-               ) {
-                  clearInterval(timer);
-                  resolve();
-               }
-            }, delay);
-         });
-      }
-
       try {
          const page = await browser.newPage();
          console.log(">>> mo tab moi", url);
