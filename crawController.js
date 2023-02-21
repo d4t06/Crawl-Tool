@@ -1,5 +1,7 @@
 const crawServices = require("./crawServices");
 const FPTcrawServices = require("./fpt_crawServices");
+const mobiles = require("./mobile.json");
+const laptops = require("./laptop.json");
 const fs = require("fs");
 const scrawController = async (browserInstance) => {
    const tddd = {
@@ -13,7 +15,7 @@ const scrawController = async (browserInstance) => {
       // await page.goto("https://chiasenhac.vn/nhac-hot.html")
 
       // producst info
-      const products = await crawServices.crawProduct(browser, tddd["laptop"]);
+      // const products = await crawServices.crawProduct(browser, tddd["laptop"]);
       // fs.writeFile("products.json", JSON.stringify(products), (err) => {
       //    if (err) console.log("ghi data vao file that bai", err);
       // });
@@ -38,21 +40,21 @@ const scrawController = async (browserInstance) => {
       //    "https://www.thegioididong.com/dtdd/iphone-11",
       //    "galaxy-z-flip-4"
       // );
-      // let i = 0;
-      // let productDetails = [];
-      // for (let item of products) {
-      //    if (item.pre_order) continue;
-      //    if (item.href === "iphone-14-plus") continue;
-      //    // if (i >= 2) continue;
-      //    // i++;
-      //    console.log(">>> truy cap " + item.href);
-      //    const detail = await crawServices.crawProductsDetail(
-      //       browser,
-      //       `https://www.thegioididong.com/dtdd/${item.href}`,
-      //       item.href
-      //    );
-      //    productDetails.push(detail);
-      // }
+      let i = 1;
+      let productDetails = [];
+      for (let item of laptops) {
+         // if (item.pre_order) continue;
+         // if (item.href === "iphone-14-plus") continue;
+         if (i >= 20) break;
+         i++;
+         console.log(">>> truy cap " + item.href);
+         const detail = await crawServices.crawProductsDetail(
+            browser,
+            `https://www.thegioididong.com/laptop/${item.href}`,
+            item.href
+         );
+         productDetails.push(detail);
+      }
       // const detail = await crawServices.crawProductsDetail(
       //    browser,
       //    `https://www.thegioididong.com/dtdd/${item.href}`,
@@ -63,11 +65,19 @@ const scrawController = async (browserInstance) => {
 
       // console.log(products);
 
-      fs.writeFile("laptop.json", JSON.stringify(products), (err) => {
-         if (err) console.log("ghi data vao file that bai", err);
-      });
+      // fs.writeFile("laptop.json", JSON.stringify(products), (err) => {
+      //    if (err) console.log("ghi data vao file that bai", err);
+      // });
 
-      // console.log(productLinks);
+      fs.writeFile(
+         "laptop-detail.json",
+         JSON.stringify(productDetails),
+         (err) => {
+            if (err) console.log("ghi data vao file that bai", err);
+         }
+      );
+
+      // console.log(productDetails);
    } catch (error) {
       console.log(error);
       browser.close();

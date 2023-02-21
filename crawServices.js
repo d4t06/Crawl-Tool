@@ -150,11 +150,11 @@ class crawServices {
             imageEls.forEach((el, index) => {
                const href =
                   el.getAttribute("src") || el.getAttribute("data-src");
-               return index <= 7 ? (images += href + "&") : "";
+               return index <= 7 ? (images += href + "*and*") : "";
             });
             const paramImgEl = el.querySelector(".img-main > img");
             const param_image = paramImgEl
-               ? paramImgEl.getAttribute("src")
+               ? "https:" + paramImgEl.getAttribute("src")
                : null;
             return { images, param_image };
          });
@@ -163,6 +163,39 @@ class crawServices {
          productDetail.images = images;
 
          productDetail.param_image = param_image;
+
+         // lay cac option
+
+         const options = await page.$$eval(".box03.group.desk", (els) => {
+            let memories = "";
+            let colors = "";
+
+            if (els.length > 1) {
+               const optionEls = els[0]?.querySelectorAll("a");
+               optionEls?.forEach((el) => {
+                  const memory = el.innerText;
+                  return (memories += memory + "*and*");
+               });
+
+               const colorEls = els[1]?.querySelectorAll("a");
+               colorEls?.forEach((el) => {
+                  const color = el.innerText;
+                  return (colors += color + "*and*");
+               });
+            } else if (els) {
+               const colorEls = els[0]?.querySelectorAll("a");
+               colorEls?.forEach((el) => {
+                  const color = el.innerText;
+                  return (colors += color + "*and*");
+               });
+            }
+
+            return [colors, memories];
+         });
+
+         productDetail.colors = options[0] ? options[0] : null;
+
+         productDetail.memories = options[1] ? options[1] : null;
 
          // lay anh param
          // const paramImage = await page.$eval(".img-main > img", (el) => {
@@ -178,10 +211,10 @@ class crawServices {
                let param = "";
                const spanEls = el.querySelectorAll("span");
                spanEls.forEach((span) => {
-                  param += span.innerText + "-";
+                  param += span.innerText + "//";
                });
 
-               return (paramss += param + "&");
+               return (paramss += param + "*and*");
             });
             return paramss;
          });
