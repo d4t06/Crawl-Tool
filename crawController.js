@@ -11,11 +11,9 @@ const scrawController = async (browserInstance) => {
    const fpt = "https://fptshop.com.vn/may-tinh-xach-tay";
    try {
       let browser = await browserInstance;
-      // let page = await browser.newPage()
-      // await page.goto("https://chiasenhac.vn/nhac-hot.html")
 
       // producst info
-      // const products = await crawServices.crawProduct(browser, tddd["laptop"]);
+      const products = await crawServices.crawProduct(browser, tddd["dtdd"]);
       // fs.writeFile("products.json", JSON.stringify(products), (err) => {
       //    if (err) console.log("ghi data vao file that bai", err);
       // });
@@ -40,42 +38,35 @@ const scrawController = async (browserInstance) => {
       //    "https://www.thegioididong.com/dtdd/iphone-11",
       //    "galaxy-z-flip-4"
       // );
-      let i = 1;
-      let productDetails = [];
-      for (let item of laptops) {
-         // if (item.pre_order) continue;
-         // if (item.href === "iphone-14-plus") continue;
-         if (i >= 20) break;
-         i++;
-         console.log(">>> truy cap " + item.href);
-         const detail = await crawServices.crawProductsDetail(
-            browser,
-            `https://www.thegioididong.com/laptop/${item.href}`,
-            item.href
-         );
-         productDetails.push(detail);
-      }
-      // const detail = await crawServices.crawProductsDetail(
-      //    browser,
-      //    `https://www.thegioididong.com/dtdd/${item.href}`,
-      //    item.key
-      // );
+      // let i = 1;
+      // let productDetails = [];
+      // for (let item of laptops) {
+
+      //    if (i >= 20) break;
+      //    i++;
+      //    console.log(">>> truy cap " + item.href);
+      //    const detail = await crawServices.crawProductsDetail(
+      //       browser,
+      //       `https://www.thegioididong.com/laptop/${item.href}`,
+      //       item.href
+      //    );
+      //    productDetails.push(detail);
+      // }
+
       browser.close();
       console.log("dong trinh duyet");
 
-      // console.log(products);
+      fs.writeFile("mobile.json", JSON.stringify(products), (err) => {
+         if (err) console.log("ghi data vao file that bai", err);
+      });
 
-      // fs.writeFile("laptop.json", JSON.stringify(products), (err) => {
-      //    if (err) console.log("ghi data vao file that bai", err);
-      // });
-
-      fs.writeFile(
-         "laptop-detail.json",
-         JSON.stringify(productDetails),
-         (err) => {
-            if (err) console.log("ghi data vao file that bai", err);
-         }
-      );
+      // fs.writeFile(
+      //    "laptop-detail.json",
+      //    JSON.stringify(productDetails),
+      //    (err) => {
+      //       if (err) console.log("ghi data vao file that bai", err);
+      //    }
+      // );
 
       // console.log(productDetails);
    } catch (error) {

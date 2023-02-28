@@ -41,7 +41,7 @@ class crawServices {
                const featureEls = el.querySelectorAll(".item-compare > span");
                let featureElData = "";
                featureEls.forEach(
-                  (item) => (featureElData += item.innerText + "&")
+                  (item) => (featureElData += item.innerText + "*and*")
                );
 
                const oldPriceEl = el.querySelector(".price-old");
@@ -57,7 +57,7 @@ class crawServices {
                const giftEl = el.querySelector(".item-gift");
                return {
                   href: href.slice(6),
-                  brand: nameEl.innerText.split(" ")[0],
+                  brand: nameEl.innerText.split(" ")[0].toLowerCase(),
                   name: nameEl.innerText,
                   category: "dtdd",
                   image:
