@@ -4,9 +4,8 @@ const startBrowser = async () => {
    let browser;
    try {
       browser = await puppeteer.launch({
-         headless: false,
+         headless: true,
          defaultViewport: null,
-         args: ["--window-size=1000,800"],
       });
       if (browser) console.log(">>> Mo trinh duyet thanh cong");
    } catch (error) {
