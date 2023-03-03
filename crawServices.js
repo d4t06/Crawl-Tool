@@ -228,34 +228,46 @@ class crawServices {
          console.log("loi trong qua trinh cao ", error);
       }
    };
-   crawImage = async (browser, url) => {
-      try {
-         const page = await browser.newPage();
-         console.log(">>> mo tab moi", url);
-         await page.goto(url);
-         // await page.evaluate(scrollToBottom);
+   crawRate = async (browser, url, key) => {
+      const page = await browser.newPage();
+      console.log(">>> mo tab moi", url);
+      await page.goto(url);
+      // await page.evaluate(scrollToBottom);
 
-         const Selector = ".listproduct";
-         await page.waitForSelector(Selector);
-         // await page.evaluate(delay);
+      const Selector = ".rtPage";
+      await page.waitForSelector(Selector);
+      // await page.evaluate(delay);
 
-         // lay banner
-         const images = await page.$$eval(".box-quicklink__item", (els) => {
-            let imageList = "";
-            els.forEach((el) => {
-               const imgEl = el.querySelector("img");
-               imageList +=
-                  "https:" + (imgEl ? imgEl.getAttribute("src") : "") + "and";
-            });
-            return imageList;
+      const rates = await page.$$eval(".comment__item", (els) => {
+         rates = els.map((el, index) => {
+            if (index > 10) return;
+            // const imgEl = el.querySelector("img");
+            const nameEl = el.querySelector(".txtname");
+            const placeEl = el.querySelector(".tickbuy");
+            const commentEl = el.querySelector(".cmt-txt");
+            const starEl = el.querySelectorAll(".icon-star");
+            return {
+               key: "",
+               name: nameEl && nameEl.innerText,
+               place: placeEl && placeEl.innerText.slice(-4),
+               star: starEl && starEl.length,
+               text_content: commentEl.innerText,
+            };
          });
-         await page.close();
-         console.log("dong tab");
-         console.log(images);
-         // return productDetail;
-      } catch (error) {
-         console.log("loi trong qua trinh craw ", error);
-      }
+         return rates;
+      });
+
+      // console.log(rates);
+
+      rates.forEach((item) => {
+         console.log("forEach");
+         item = "";
+         // return ;
+      });
+
+      await page.close();
+      console.log("dong tab");
+      return rates;
    };
 }
 
