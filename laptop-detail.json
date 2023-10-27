@@ -1,362 +1,82 @@
 [
    {
-      "key": "apple-macbook-air-2020-mgn63saa",
-      "title": "Laptop Apple MacBook Air M1 2020 8GB/256GB/7-core GPU (MGND3SA/A)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-180121-1057300.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-291120-0219090.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-291120-0227360.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-291120-0231270.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-291120-0223010.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-130121-0959360.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-291120-0229080.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa-101220-0820370.jpg*and*",
-      "param_image": null,
-      "colors": "Vàng đồng*and*Xám*and*Bạc*and*",
-      "memories": null,
-      "params": "Apple M1//*and*8 GB//*and*256 GB SSD//*and*13.3\"//Retina (2560 x 1600)//*and*Card tích hợp//7 nhân GPU//*and*2 x Thunderbolt 3 (USB-C)//Jack tai nghe 3.5 mm//*and*Có đèn bàn phím//*and*Mac OS//*and*Vỏ kim loại nguyên khối//*and*Dài 304.1 mm - Rộng 212.4 mm - Dày 4.1 mm đến 16.1 mm - Nặng 1.29 kg//*and*2020//*and*"
+      "product_id": "apple-macbook-air-2020-mgn63saa",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/231244/Slider/vi-vn-apple-macbook-air-2020-mgn63saa-slider-update-11.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa638168474820399305.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa638168474824219332.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa638168474828249381.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa638168474831479334.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa638168474834749363.jpg*and*https://cdn.tgdd.vn/Products/Images/44/231244/Slider/apple-macbook-air-2020-mgn63saa638168474838379357.jpg*and*"
    },
    {
-      "key": "asus-tuf-gaming-fx506lhb-i5-hn188w",
-      "title": "Laptop Asus TUF Gaming F15 FX506LHB i5 10300H/8GB/512GB/4GB GTX1650/144Hz/Win11 (HN188W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/279259/Slider/vi-vn-asus-tuf-gaming-fx506lhb-i5-hn188w-8.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/279259/Kit/asus-tuf-gaming-fx506lhb-i5-hn188w-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//10300H//2.5GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//2933 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080) //144Hz//*and*Card rời//GTX 1650 4GB//*and*HDMI//LAN (RJ45)//USB 2.0//Jack tai nghe 3.5 mm//2 x USB 3.2//1x USB 3.2 Gen 2 Type-C support DisplayPort / power delivery / G-SYNC//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 359 mm - Rộng 256 mm - Dày 24.9 mm - Nặng 2.3 kg//*and*2021//*and*"
+      "product_id": "hp-15s-fq5229tu-i3-8u237pa",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/313084/Slider/vi-vn-hp-15s-fq5229tu-i3-8u237pa-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/313084/Slider/vi-vn-hp-15s-fq5229tu-i3-8u237pa-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/313084/Slider/vi-vn-hp-15s-fq5229tu-i3-8u237pa-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/313084/Slider/vi-vn-hp-15s-fq5229tu-i3-8u237pa-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/313084/Slider/vi-vn-hp-15s-fq5229tu-i3-8u237pa-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "acer-aspire-a514-54-511g-i5-nxa28sv009",
-      "title": "Laptop Acer Aspire 5 A514 54 511G i5 1135G7/8GB/1TB SSD/Win11 (NX.A28SV.009)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/271043/Slider/vi-vn-acer-aspire-a514-54-511g-i5-nxa28sv009-7.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i5//1135G7//2.4GHz//*and*8 GB//DDR4 (Onboard 4 GB + 1 khe 4 GB)//3200 MHz//*and*Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//1 TB SSD M.2 PCIe//*and*14\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//LAN (RJ45)//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//1 x USB 2.0//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa - nắp lưng bằng kim loại//*and*Dài 328 mm - Rộng 223 mm - Dày 17.95 mm - Nặng 1.46 kg//*and*2021//*and*"
+      "product_id": "acer-aspire-5-a515-58gm-51lb-i5-nxkq4sv002",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/314630/Slider/vi-vn-acer-aspire-5-a515-58gm-51lb-i5-nxkq4sv002-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/314630/Slider/vi-vn-acer-aspire-5-a515-58gm-51lb-i5-nxkq4sv002-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/314630/Slider/vi-vn-acer-aspire-5-a515-58gm-51lb-i5-nxkq4sv002-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/314630/Slider/vi-vn-acer-aspire-5-a515-58gm-51lb-i5-nxkq4sv002-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/314630/Slider/vi-vn-acer-aspire-5-a515-58gm-51lb-i5-nxkq4sv002-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "acer-aspire-3-a315-58-52kt-i5-nxam0sv006",
-      "title": "Laptop Acer Aspire 3 A315 58 52KT i5 1135G7/8GB/512GB/Win11 (NX.AM0SV.006)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/285763/Slider/vi-vn-acer-aspire-3-a315-58-52kt-i5-nxam0sv006-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285763/Slider/vi-vn-acer-aspire-3-a315-58-52kt-i5-nxam0sv006-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285763/Slider/vi-vn-acer-aspire-3-a315-58-52kt-i5-nxam0sv006-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285763/Slider/vi-vn-acer-aspire-3-a315-58-52kt-i5-nxam0sv006-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285763/Slider/vi-vn-acer-aspire-3-a315-58-52kt-i5-nxam0sv006-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285763/Slider/vi-vn-acer-aspire-3-a315-58-52kt-i5-nxam0sv006-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/285763/Kit/acer-aspire-3-a315-58-52kt-i5-nxam0sv006-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1135G7//2.4GHz//*and*8 GB//DDR4 (Onboard 4 GB + 1 khe 4 GB)//Từ 2400 MHz (Hãng công bố)//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//LAN (RJ45)//Jack tai nghe 3.5 mm//2 x USB 3.2//1 x USB 2.0//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 363.4 mm - Rộng 238.4 mm - Dày 19.9 mm - Nặng 1.7 kg//*and*2021//*and*"
+      "product_id": "asus-tuf-gaming-f15-fx506hf-i5-hn014w",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/304867/Slider/vi-vn-asus-tuf-gaming-f15-fx506hf-i5-hn014w--(3).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304867/Slider/vi-vn-asus-tuf-gaming-f15-fx506hf-i5-hn014w--(4).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304867/Slider/vi-vn-asus-tuf-gaming-f15-fx506hf-i5-hn014w--(5).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304867/Slider/vi-vn-asus-tuf-gaming-f15-fx506hf-i5-hn014w--(6).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304867/Slider/vi-vn-asus-tuf-gaming-f15-fx506hf-i5-hn014w--(1).jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "hp-15s-fq2716tu-i3-7c0x3pa",
-      "title": "Laptop HP 15s fq2716TU i3 1115G4/8GB/512GB/Win11 (7C0X3PA)",
-      "images": "//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-1.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-2.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-3.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-4.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-5-1.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-6.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-7.jpg*and*//cdn.tgdd.vn/Products/Images/44/301634/hp-15s-fq2716tu-i3-7c0x3pa-glr-8.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/301634/Kit/hp-15s-fq2716tu-i3-7c0x3pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1115G4//3GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//Jack tai nghe 3.5 mm//2x SuperSpeed USB A//1x SuperSpeed USB Type-C//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 358.5 mm - Rộng 242 mm - Dày 17.9 mm - Nặng 1.7 kg//*and*2022//*and*"
+      "product_id": "hp-15s-fq5162tu-i5-7c134pa",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/302532/Slider/hp-15s-fq5162tu-i5-7c134pa-slider-abc-2-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302532/Slider/hp-15s-fq5162tu-i5-7c134pa-slider-abc-3-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302532/Slider/hp-15s-fq5162tu-i5-7c134pa-slider-abc-4-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302532/Slider/hp-15s-fq5162tu-i5-7c134pa-slider-abc-5-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302532/Slider/hp-15s-fq5162tu-i5-7c134pa-slider-abc-6-1020x570.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "hp-15s-fq5078tu-i5-6k798pa",
-      "title": "Laptop HP 15s fq5078TU i5 1235U/8GB/512GB/Win11 (6K798PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/284139/Slider/vi-vn-hp-15s-fq5078tu-i5-6k798pa-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284139/Slider/vi-vn-hp-15s-fq5078tu-i5-6k798pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284139/Slider/hp-15s-fq5078tu-i5-6k798pa-ab-2-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284139/Slider/vi-vn-hp-15s-fq5078tu-i5-6k798pa-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284139/Slider/vi-vn-hp-15s-fq5078tu-i5-6k798pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284139/Slider/vi-vn-hp-15s-fq5078tu-i5-6k798pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284139/Slider/vi-vn-hp-15s-fq5078tu-i5-6k798pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/284139/Kit/hp-15s-fq5078tu-i5-6k798pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1235U//1.3GHz//*and*8 GB//DDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)//3200 MHz//*and*512 GB SSD NVMe PCIe//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 358.5 mm - Rộng 242 mm - Dày 17.9 mm - Nặng 1.69 kg//*and*2022//*and*"
+      "product_id": "lenovo-ideapad-3-15itl6-i3-82h803sgvn",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/309721/Slider/vi-vn-lenovo-ideapad-3-15itl6-i3-82h803sgvn-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309721/Slider/vi-vn-lenovo-ideapad-3-15itl6-i3-82h803sgvn-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309721/Slider/vi-vn-lenovo-ideapad-3-15itl6-i3-82h803sgvn-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309721/Slider/vi-vn-lenovo-ideapad-3-15itl6-i3-82h803sgvn-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309721/Slider/vi-vn-lenovo-ideapad-3-15itl6-i3-82h803sgvn-slider-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309721/Slider/vi-vn-lenovo-ideapad-3-15itl6-i3-82h803sgvn-slider-7.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*"
    },
    {
-      "key": "acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006",
-      "title": "Laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H/8GB/512GB/144Hz/4GB GTX1650/Win11 (NH.QBMSV.006)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/263980/Slider/vi-vn-acer-nitro-5-gaming-an515-45-r6ev-r5-nhqbmsv006-8.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "Ryzen 5//5600H//3.3GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)//Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080) //144Hz//*and*Card rời//GTX 1650 4GB//*and*USB Type-C//HDMI//LAN (RJ45)//3 x USB 3.2//Jack tai nghe 3.5 mm//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 363.4 mm - Rộng 255 mm - Dày 23.9 mm - Nặng 2.2 kg//*and*2021//*and*"
+      "product_id": "hp-240-g9-i3-6l1x7pa",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/311114/Slider/hp-240-g9-i3-6l1x7pa638276094221894883.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311114/Slider/hp-240-g9-i3-6l1x7pa638276094223784886.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311114/Slider/hp-240-g9-i3-6l1x7pa638276094224954920.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311114/Slider/hp-240-g9-i3-6l1x7pa638276094226034963.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311114/Slider/hp-240-g9-i3-6l1x7pa638276094227234990.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "hp-pavilion-15-eg2056tu-i5-6k786pa",
-      "title": "Laptop HP Pavilion 15 eg2056TU i5 1240P/8GB/512GB/Win11 (6K786PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/284141/Slider/vi-vn-hp-pavilion-15-eg2056tu-i5-6k786pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284141/Slider/vi-vn-hp-pavilion-15-eg2056tu-i5-6k786pa-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284141/Slider/vi-vn-hp-pavilion-15-eg2056tu-i5-6k786pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284141/Slider/vi-vn-hp-pavilion-15-eg2056tu-i5-6k786pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284141/Slider/vi-vn-hp-pavilion-15-eg2056tu-i5-6k786pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/284141/Kit/hp-pavilion-15-eg2056tu-i5-6k786pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1240P//1.7GHz//*and*8 GB//DDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)//3200 MHz//*and*512 GB SSD NVMe PCIe//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa - chiếu nghỉ tay bằng kim loại//*and*Dài 360.2 mm - Rộng 234 mm - Dày 17.9 mm - Nặng 1.72 kg//*and*2022//*and*"
+      "product_id": "asus-vivobook-16-x1605va-i5-mb360w",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309375/Slider/vi-vn-asus-vivobook-16-x1605va-i5-mb360w-slider-7.jpg*and*"
    },
    {
-      "key": "acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006",
-      "title": "Laptop Acer TravelMate B3 TMB311 31 C2HB N4020/4GB/128GB/Win11 (NX.VNFSV.006)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265015/Slider/vi-vn-acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/265015/Kit/acer-travelmate-b3-tmb311-31-c2hb-nxvnfsv006-n.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "Celeron//N4020//1.1GHz//*and*4 GB//DDR4 (1 khe)//Từ 2400 MHz (Hãng công bố)//*and*128 GB SSD M2 PCIe//*and*11.6\"//HD (1366 x 768)//*and*Card tích hợp//Intel UHD 600//*and*USB Type-C//HDMI//LAN (RJ45)//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 295 mm - Rộng 215 mm - Dày 20.99 mm - Nặng 1.4 kg//*and*2021//*and*"
+      "product_id": "asus-vivobook-go-15-e1504fa-r5-nj776w",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/311178/Slider/vi-vn-asus-vivobook-go-15-e1504fa-r5-nj776w-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311178/Slider/vi-vn-asus-vivobook-go-15-e1504fa-r5-nj776w-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311178/Slider/vi-vn-asus-vivobook-go-15-e1504fa-r5-nj776w-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311178/Slider/vi-vn-asus-vivobook-go-15-e1504fa-r5-nj776w-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311178/Slider/vi-vn-asus-vivobook-go-15-e1504fa-r5-nj776w-slider-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311178/Slider/vi-vn-asus-vivobook-go-15-e1504fa-r5-nj776w-slider-7.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*"
    },
    {
-      "key": "dell-vostro-3510-i5-p112f002bbl",
-      "title": "Laptop Dell Vostro 3510 i5 1135G7/8GB/512GB/2GB MX350/OfficeHS/Win11 (P112F002BBL)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-8.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266280/Slider/vi-vn-dell-vostro-3510-i5-p112f002bbl-9.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/266280/Kit/dell-vostro-3510-i5-p112f002bbl-fix-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1135G7//2.4GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB (2280) / 1 TB (2230))//Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card rời//MX350 2GB//*and*HDMI//LAN (RJ45)//USB 2.0//Jack tai nghe 3.5 mm//2 x USB 3.2 / 1 x USB 3.2 và 1 x USB Type-C (Tuỳ thuộc vào lô hàng)//*and*Windows 11 Home SL + Office Home & Student vĩnh viễn//*and*Vỏ nhựa//*and*Dài 358.5 mm - Rộng 235.5 mm - Dày 18.9 mm - Nặng 1.69 kg//*and*2021//*and*"
+      "product_id": "dell-vostro-15-3520-i3-5m2tt1",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/311210/Slider/vi-vn-dell-vostro-15-3520-i3-5m2tt1-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311210/Slider/vi-vn-dell-vostro-15-3520-i3-5m2tt1-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311210/Slider/vi-vn-dell-vostro-15-3520-i3-5m2tt1-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311210/Slider/vi-vn-dell-vostro-15-3520-i3-5m2tt1-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/311210/Slider/vi-vn-dell-vostro-15-3520-i3-5m2tt1-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "acer-aspire-a315-56-32tp-i3-nxhs5sv00k",
-      "title": "Laptop Acer Aspire 3 A315 56 32TP i3 1005G1/4GB/256GB/Win11 (NX.HS5SV.00K)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546273234096.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546277634408.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546279964538.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546278824451.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546282094669.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546274564194.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546276504295.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/274207/Slider/acer-aspire-a315-56-32tp-i3-nxhs5sv00k637862546281184609.jpeg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i3//1005G1//1.2GHz//*and*4 GB//DDR4 (Onboard 4 GB +1 khe rời)//2400 MHz//*and*Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 512 GB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*2 x USB 2.0//HDMI//LAN (RJ45)//USB 3.1//Jack tai nghe 3.5 mm//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 363.4 mm - Rộng 247.5 mm - Dày 19.9 mm - Nặng 1.7 kg//*and*2021//*and*"
+      "product_id": "dell-inspiron-3520-i3-71003264",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/309293/Slider/vi-vn-dell-inspiron-3520-i3-71003264-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309293/Slider/vi-vn-dell-inspiron-3520-i3-71003264-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309293/Slider/vi-vn-dell-inspiron-3520-i3-71003264-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309293/Slider/vi-vn-dell-inspiron-3520-i3-71003264-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309293/Slider/vi-vn-dell-inspiron-3520-i3-71003264-slider-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/309293/Slider/vi-vn-dell-inspiron-3520-i3-71003264-slider-7.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*"
    },
    {
-      "key": "asus-rog-strix-gaming-g513ih-r7-hn015w",
-      "title": "Laptop Asus Gaming ROG Strix G15 G513IH R7 4800H/8GB/512GB/4GB GTX1650/144Hz/Win11 (HN015W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/270031/Slider/vi-vn-asus-rog-strix-gaming-g513ih-r7-hn015w-8.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/270031/Kit/asus-rog-strix-gaming-g513ih-r7-hn015w-notelapcopy.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "Ryzen 7//4800H//2.9GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080) //144Hz//*and*Card rời//GTX 1650 4GB//*and*HDMI//LAN (RJ45)//Jack tai nghe 3.5 mm//USB Type-C (Power Delivery and DisplayPort)//3x Type-A USB 3.2 Gen 1//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa - nắp lưng bằng kim loại//*and*Dài 354 mm - Rộng 259 mm - Dày 20.6 mm - Nặng 2.1 kg//*and*2021//*and*"
+      "product_id": "acer-aspire-3-a315-58-589k-i5-nxam0sv008",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/305600/Slider/vi-vn-acer-aspire-3-a315-58-589k-i5-nxam0sv008--(4).jpg*and*https://cdn.tgdd.vn/Products/Images/44/305600/Slider/vi-vn-acer-aspire-3-a315-58-589k-i5-nxam0sv008--(5).jpg*and*https://cdn.tgdd.vn/Products/Images/44/305600/Slider/vi-vn-acer-aspire-3-a315-58-589k-i5-nxam0sv008--(6).jpg*and*https://cdn.tgdd.vn/Products/Images/44/305600/Slider/vi-vn-acer-aspire-3-a315-58-589k-i5-nxam0sv008--(1).jpg*and*https://cdn.tgdd.vn/Products/Images/44/305600/Slider/vi-vn-acer-aspire-3-a315-58-589k-i5-nxam0sv008--(2).jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "asus-vivobook-15x-oled-a1503za-i5-l1290w",
-      "title": "Laptop Asus VivoBook 15X OLED A1503ZA i5 12500H/8GB/512GB/Win11 (L1290W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284257/Slider/vi-vn-asus-vivobook-15x-oled-a1503za-i5-l1290w-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/284257/Kit/asus-vivobook-15x-oled-a1503za-i5-l1290w-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//12500H//2.5GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB onboard + 1 khe trống)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác không giới hạn dung lượng)//*and*15.6\"//Full HD (1920 x 1080) OLED//*and*Card tích hợp//Intel UHD//*and*USB Type-C//HDMI//Jack tai nghe 3.5 mm//1 x USB 2.0//2 x USB 3.2//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 356.8 mm - Rộng 227.6 mm - Dày 19.9 mm - Nặng 1.7 kg//*and*2022//*and*"
+      "product_id": "apple-macbook-air-m2-2022",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-8.jpg*and*"
    },
    {
-      "key": "hp-15s-fq5077tu-i7-6k797pa",
-      "title": "Laptop HP 15s fq5077TU i7 1255U/8GB/512GB/Win11 (6K797PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/284140/Slider/vi-vn-hp-15s-fq5077tu-i7-6k797pa-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284140/Slider/hp-15s-fq5077tu-i7-6k797pa637941283828433469.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284140/Slider/hp-15s-fq5077tu-i7-6k797pa637941283830053436.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284140/Slider/hp-15s-fq5077tu-i7-6k797pa637941283830943366.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284140/Slider/hp-15s-fq5077tu-i7-6k797pa637941283832063371.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284140/Slider/hp-15s-fq5077tu-i7-6k797pa637941283833113429.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284140/Slider/hp-15s-fq5077tu-i7-6k797pa637941283834053499.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/284140/Kit/hp-15s-fq5077tu-i7-6k797pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i7//1255U//1.7GHz//*and*8 GB//DDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)//3200 MHz//*and*512 GB SSD NVMe PCIe//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 358.5 mm - Rộng 242 mm - Dày 17.9 mm - Nặng 1.69 kg//*and*2022//*and*"
+      "product_id": "acer-aspire-3-a315-58-54xf-i5-nxam0sv007",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/285764/Slider/acer-aspire-3-a315-58-54xf-i5-nxam0sv007-slider-2-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285764/Slider/3c-1417x792.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285764/Slider/vi-vn-acer-aspire-3-a315-58-54xf-i5-nxam0sv007-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285764/Slider/vi-vn-acer-aspire-3-a315-58-54xf-i5-nxam0sv007-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285764/Slider/vi-vn-acer-aspire-3-a315-58-54xf-i5-nxam0sv007-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "asus-vivobook-x415ea-i3-ek1386w",
-      "title": "Laptop Asus VivoBook X415EA i3 1115G4/4GB/512GB/Win11 (EK1386W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/274920/Slider/vi-vn-asus-vivobook-x415ea-i3-ek1386w-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274920/Slider/asus-vivobook-x415ea-i3-ek1386w-fix-2-1020x569.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274920/Slider/vi-vn-asus-vivobook-x415ea-i3-ek1386w-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274920/Slider/vi-vn-asus-vivobook-x415ea-i3-ek1386w-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274920/Slider/vi-vn-asus-vivobook-x415ea-i3-ek1386w-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274920/Slider/vi-vn-asus-vivobook-x415ea-i3-ek1386w-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i3//1115G4//3GHz//*and*4 GB//DDR4 (Onboard 4 GB +1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ khe cắm HDD SATA//*and*14\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*USB Type-C//2 x USB 2.0//HDMI//Jack tai nghe 3.5 mm//1 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 325.4 mm - Rộng 216 mm - Dày 19.9 mm - Nặng 1.6 kg//*and*2021//*and*"
+      "product_id": "acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/310282/Slider/vi-vn-acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001-slider-1-1020x570-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/310282/Slider/vi-vn-acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/310282/Slider/vi-vn-acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001-slider-3-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/310282/Slider/vi-vn-acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/310282/Slider/vi-vn-acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/310282/Slider/vi-vn-acer-aspire-3-a315-510p-32ef-i3-nxkdhsv001-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*"
    },
    {
-      "key": "lenovo-ideapad-3-15iau7-i3-82rk005lvn",
-      "title": "Laptop Lenovo Ideapad 3 15IAU7 i3 1215U/8GB/256GB/Win11 (82RK005LVN)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287769/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk005lvn-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/287769/Kit/lenovo-ideapad-3-15iau7-i3-82rk005lvn-note-fix-01.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1215U//1.2GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB onboard + 1 khe trống)//3200 MHz//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//Jack tai nghe 3.5 mm//1 x USB 2.0//1 x USB 3.2//USB Type-C (hỗ trợ truyền dữ liệu, Power Delivery 3.0 và DisplayPort 1.2)//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 359.2 mm - Rộng 236.5 mm - Dày 19.9 mm - Nặng 1.63 kg//*and*2022//*and*"
+      "product_id": "dell-inspiron-15-3520-i5-n5i5122w1",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/296847/Slider/vi-vn-dell-inspiron-15-3520-i5-n5i5122w1-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/296847/Slider/vi-vn-dell-inspiron-15-3520-i5-n5i5122w1-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/296847/Slider/vi-vn-dell-inspiron-15-3520-i5-n5i5122w1-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/296847/Slider/vi-vn-dell-inspiron-15-3520-i5-n5i5122w1-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/296847/Slider/vi-vn-dell-inspiron-15-3520-i5-n5i5122w1-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/296847/Slider/vi-vn-dell-inspiron-15-3520-i5-n5i5122w1-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*"
    },
    {
-      "key": "dell-vostro-5410-i5-v4i5214w1",
-      "title": "Laptop Dell Vostro 5410 i5 11320H/8GB/512GB/Office H&S/Win11 (V4I5214W1)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267695/Slider/vi-vn-dell-vostro-5410-i5-v4i5214w1-7.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i5//11320H//3.2GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*14\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//LAN (RJ45)//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Có đèn bàn phím//*and*Windows 11 Home SL + Office Home & Student vĩnh viễn//*and*Vỏ nhựa - nắp lưng bằng kim loại//*and*Dài 321.2 mm - Rộng 212.8 mm - Dày 17.9 mm - Nặng 1.44 kg//*and*2021//*and*"
+      "product_id": "asus-vivobook-15-x1504za-i3-nj102w",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/312414/Slider/vi-vn-asus-vivobook-15-x1504za-i3-nj102w-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/312414/Slider/vi-vn-asus-vivobook-15-x1504za-i3-nj102w-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/312414/Slider/vi-vn-asus-vivobook-15-x1504za-i3-nj102w-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/312414/Slider/vi-vn-asus-vivobook-15-x1504za-i3-nj102w-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/312414/Slider/vi-vn-asus-vivobook-15-x1504za-i3-nj102w-slider-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/312414/Slider/vi-vn-asus-vivobook-15-x1504za-i3-nj102w-slider-7.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*"
    },
    {
-      "key": "hp-15s-fq2662tu-i3-6k795pa",
-      "title": "Laptop HP 15s fq2662TU i3 1115G4/4GB/256GB/Win11 (6K795PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284190/Slider/vi-vn-hp-15s-fq2662tu-i3-6k795pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/284190/Kit/hp-15s-fq2662tu-i3-6k795pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1115G4//3GHz//*and*4 GB//DDR4 2 khe (1 khe 4 GB + 1 khe rời)//3200 MHz//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//Jack tai nghe 3.5 mm//2x SuperSpeed USB A//1x SuperSpeed USB Type-C//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 358.5 mm - Rộng 242 mm - Dày 17.9 mm - Nặng 1.7 kg//*and*2022//*and*"
+      "product_id": "asus-vivobook-x415ea-i3-ek2034w",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/304866/Slider/vi-vn-asus-vivobook-x415ea-i3-ek2034w--(3).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304866/Slider/vi-vn-asus-vivobook-x415ea-i3-ek2034w--(4).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304866/Slider/vi-vn-asus-vivobook-x415ea-i3-ek2034w--(5).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304866/Slider/vi-vn-asus-vivobook-x415ea-i3-ek2034w--(6).jpg*and*https://cdn.tgdd.vn/Products/Images/44/304866/Slider/vi-vn-asus-vivobook-x415ea-i3-ek2034w--(1).jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "asus-vivobook-x515ma-n4020-br480w",
-      "title": "Laptop Asus VivoBook X515MA N4020/4GB/256GB/Win11 (BR480W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-a-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-a-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-a-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-a-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/asus-vivobook-x515ma-n4020-br480w-05-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-a-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/262060/Slider/vi-vn-asus-vivobook-x515ma-n4020-br480w-a-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/262060/Kit/asus-vivobook-x515ma-n4020-br480w-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "Celeron//N4020//1.1GHz//*and*4 GB//DDR4 (1 khe)//2400 MHz//*and*Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//256 GB SSD NVMe PCIe//*and*15.6\"//HD (1366 x 768)//*and*Card tích hợp//Intel UHD 600//*and*USB Type-C//2 x USB 2.0//HDMI//Jack tai nghe 3.5 mm//1 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 360.2 mm - Rộng 234.9 mm - Dày 19.9 mm - Nặng 1.8 kg//*and*2021//*and*"
+      "product_id": "asus-vivobook-x515ea-i3-ej3948w",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/305010/Slider/vi-vn-asus-vivobook-x515ea-i3-ej3948w-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/305010/Slider/vi-vn-asus-vivobook-x515ea-i3-ej3948w-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/305010/Slider/vi-vn-asus-vivobook-x515ea-i3-ej3948w-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/305010/Slider/vi-vn-asus-vivobook-x515ea-i3-ej3948w-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/305010/Slider/vi-vn-asus-vivobook-x515ea-i3-ej3948w-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    },
    {
-      "key": "asus-vivobook-15-x1502za-i5-ej120w",
-      "title": "Laptop Asus Vivobook 15 X1502ZA i5 1240P/8GB/512GB/Win11 (EJ120W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/281483/Slider/vi-vn-asus-vivobook-15-x1502za-i5-ej120w-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/281483/Kit/asus-vivobook-15-x1502za-i5-ej120w-fix-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1240P//1.7GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB onboard + 1 khe trống)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác không giới hạn dung lượng)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//1 x USB 2.0//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 359.7 mm - Rộng 232.5 mm - Dày 19.9 mm - Nặng 1.7 kg//*and*2022//*and*"
-   },
-   {
-      "key": "acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006",
-      "title": "Laptop Acer Nitro 5 Gaming AN515 57 553E i5 11400H/8GB/512GB/4GB RTX3050/144Hz/Win11 (NH.QENSV.006)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384233840543.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384235480498.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384240360462.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384236540483.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384237590461.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384238580466.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384244620522.jpg*and*https://cdn.tgdd.vn/Products/Images/44/274134/Slider/acer-nitro-5-gaming-an515-57-553e-i5-nhqensv006637862384245660482.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i5//11400H//2.7GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)//Hỗ trợ khe cắm HDD SATA 2.5 inch mở rộng (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080) //144Hz//*and*Card rời//RTX 3050 4GB//*and*HDMI//LAN (RJ45)//USB Type-C//Jack tai nghe 3.5 mm//3 x USB 3.2//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 363.4 mm - Rộng 255 mm - Dày 23.9 mm - Nặng 2.2 kg//*and*2021//*and*"
-   },
-   {
-      "key": "acer-aspire-3-a315-57-379k-i3-nxkagsv001",
-      "title": "Laptop Acer Aspire 3 A315 57 379K i3 1005G1/4GB/256GB/Win11 (NX.KAGSV.001)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291965/Slider/vi-vn-acer-aspire-3-a315-57-379k-i3-nxkagsv001-slider-8.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/291965/Kit/acer-aspire-3-a315-57-379k-i3-nxkagsv001-fix-note-1.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1005G1//1.2GHz//*and*4 GB//DDR4 (Onboard 4 GB +1 khe rời)//Từ 2400 MHz (Hãng công bố)//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ khe cắm HDD SATA 2.5 inch mở rộng (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//LAN (RJ45)//2 x USB 3.1//Jack tai nghe 3.5 mm//1 x USB 2.0//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 363.4 mm - Rộng 250.5 mm - Dày 19.9 mm - Nặng 1.7 kg//*and*2021//*and*"
-   },
-   {
-      "key": "asus-vivobook-x515ea-i3-ej2953w",
-      "title": "Laptop Asus Vivobook X515EA i3 1115G4/8GB/256GB/Win11 (EJ2953W)",
-      "images": "//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-1.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-2.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-3.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-4.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-5.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-6.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-7.jpg*and*//cdn.tgdd.vn/Products/Images/44/302412/asus-vivobook-x515ea-i3-ej2953w-8.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i3//1115G4//3GHz//*and*8 GB//DDR4 (Onboard)//3200 MHz//*and*256 GB SSD NVMe PCIe//Hỗ trợ khe cắm HDD SATA//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*USB Type-C//2 x USB 2.0//HDMI//Jack tai nghe 3.5 mm//1 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 360 mm - Rộng 235 mm - Dày 19.9 mm - Nặng 1.8 kg//*and*2023//*and*"
-   },
-   {
-      "key": "dell-inspiron-15-3511-i5-70270650",
-      "title": "Laptop Dell Inspiron 15 3511 i5 1135G7/8GB/512GB/2GB MX350/Office H&S/Win11 (70270650)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264349/Slider/vi-vn-dell-inspiron-15-3511-i5-70270650-8.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i5//1135G7//2.4GHz//*and*8 GB//DDR4 (2 khe)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB (2280) / 1 TB (2230))//Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card rời//MX350 2GB//*and*HDMI//USB 2.0//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL + Office Home & Student vĩnh viễn//*and*Vỏ nhựa//*and*Dài 359 mm - Rộng 235.5 mm - Dày 19 mm - Nặng 1.73 kg//*and*2021//*and*"
-   },
-   {
-      "key": "msi-modern-14-b11mou-i3-1027vn",
-      "title": "Laptop MSI Modern 14 B11MOU i3 1115G4/8GB/256GB/Win11 (1027VN)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/vi-vn-msi-modern-14-b11mou-i3-1027vn-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/266898/Slider/msi-modern-14-b11mou-i3-1027vn-a-8-1020x570.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/266898/Kit/msi-modern-14-b11mou-i3-1027vn-n.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1115G4//3GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB)//*and*14\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*USB Type-C//HDMI//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ kim loại//*and*Dài 319 mm - Rộng 219 mm - Dày 18.1 mm - Nặng 1.3 kg//*and*2021//*and*"
-   },
-   {
-      "key": "acer-aspire-3-a315-59-314f-i3-nxk6tsv002",
-      "title": "Laptop Acer Aspire 3 A315 59 314F i3 1215U/8GB/256GB/Win11 (NX.K6TSV.002)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/286228/Slider/vi-vn-acer-aspire-3-a315-59-314f-i3-nxk6tsv002-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/286228/Kit/acer-aspire-3-a315-59-314f-i3-nxk6tsv002-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1215U//1.2GHz//*and*8 GB//DDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)//Từ 2400 MHz (Hãng công bố)//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ khe cắm HDD SATA 2.5 inch mở rộng (nâng cấp tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//LAN (RJ45)//3 x USB 3.2//Jack tai nghe 3.5 mm//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 362.9 mm - Rộng 241.26 mm - Dày 19.9 mm - Nặng 1.7 kg//*and*2022//*and*"
-   },
-   {
-      "key": "hp-240-g9-i5-6l1y2pa",
-      "title": "Laptop HP 240 G9 i5 1235U/8GB/512GB/Win11 (6L1Y2PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285963/Slider/vi-vn-hp-240-g9-i5-6l1y2pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/285963/Kit/hp-240-g9-i5-6l1y2pa-01.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1235U//1.3GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*14\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//LAN (RJ45)//USB Type-C//2 x USB 3.1//Jack tai nghe 3.5 mm//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 324 mm - Rộng 225.9 mm - Dày 19.9 mm - Nặng 1.47 kg//*and*2022//*and*"
-   },
-   {
-      "key": "hp-pavilion-15-eg2059tu-i5-6k789pa",
-      "title": "Laptop HP Pavilion 15 eg2059TU i5 1240P/8GB/256GB/Win11 (6K789PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/288536/Slider/vi-vn-hp-pavilion-15-eg2059tu-i5-6k789pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/288536/Slider/vi-vn-hp-pavilion-15-eg2059tu-i5-6k789pa-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/288536/Slider/vi-vn-hp-pavilion-15-eg2059tu-i5-6k789pa-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/288536/Slider/vi-vn-hp-pavilion-15-eg2059tu-i5-6k789pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/288536/Slider/vi-vn-hp-pavilion-15-eg2059tu-i5-6k789pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/288536/Slider/vi-vn-hp-pavilion-15-eg2059tu-i5-6k789pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/288536/Kit/hp-pavilion-15-eg2059tu-i5-6k789pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1240P//1.7GHz//*and*8 GB//DDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)//3200 MHz//*and*256 GB SSD NVMe PCIe//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//USB Type-C//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa - chiếu nghỉ tay bằng kim loại//*and*Dài 360.2 mm - Rộng 234 mm - Dày 17.9 mm - Nặng 1.72 kg//*and*2022//*and*"
-   },
-   {
-      "key": "apple-macbook-air-m1-2020-z124000de",
-      "title": "Laptop Apple MacBook Air M1 2020 16GB/256GB/7-core GPU (Z12A0004Z)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/239552/Slider/thumb-macbook-air-2020-m1-grey-800x444-1.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/vi-vn-apple-macbook-air-m1-2020-z124000de-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/vi-vn-apple-macbook-air-m1-2020-z124000de-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/vi-vn-apple-macbook-air-m1-2020-z124000de-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/apple-macbook-air-m1-2020-z124000de-4-1-1-1020x570.jpeg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/vi-vn-apple-macbook-air-m1-2020-z124000de-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/vi-vn-apple-macbook-air-m1-2020-z124000de-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/239552/Slider/vi-vn-apple-macbook-air-m1-2020-z124000de-7.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "Apple M1//*and*16 GB//*and*256 GB SSD//*and*13.3\"//Retina (2560 x 1600)//*and*Card tích hợp//7 nhân GPU//*and*2 x Thunderbolt 3 (USB-C)//Jack tai nghe 3.5 mm//*and*Có đèn bàn phím//*and*Mac OS//*and*Vỏ kim loại nguyên khối//*and*Dài 304.1 mm - Rộng 212.4 mm - Dày 4.1 mm đến 16.1 mm - Nặng 1.29 kg//*and*2020//*and*"
-   },
-   {
-      "key": "hp-240-g9-i5-6l1y1pa",
-      "title": "Laptop HP 240 G9 i5 1235U/8GB/256GB/Win11 (6L1Y1PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/291153/Slider/vi-vn-hp-240-g9-i5-6l1y1pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291153/Slider/vi-vn-hp-240-g9-i5-6l1y1pa-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291153/Slider/vi-vn-hp-240-g9-i5-6l1y1pa-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291153/Slider/vi-vn-hp-240-g9-i5-6l1y1pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291153/Slider/vi-vn-hp-240-g9-i5-6l1y1pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/291153/Slider/vi-vn-hp-240-g9-i5-6l1y1pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/291153/Kit/hp-240-g9-i5-6l1y1pa-note-fix.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1235U//1.3GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*14\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//LAN (RJ45)//USB Type-C//2x SuperSpeed USB A//Jack tai nghe 3.5 mm//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 324 mm - Rộng 225.9 mm - Dày 19.9 mm - Nặng 1.47 kg//*and*2022//*and*"
-   },
-   {
-      "key": "dell-vostro-3400-i5-yx51w6",
-      "title": "Laptop Dell Vostro 3400 i5 1135G7/8GB/512GB/2GB MX330/OfficeHS/Win11 (YX51W6)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/285746/Slider/dell-vostro-3400-i5-yx51w6-ab-fix-1-1020x570.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-8.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-9.jpg*and*https://cdn.tgdd.vn/Products/Images/44/285746/Slider/vi-vn-dell-vostro-3400-i5-yx51w6-10.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i5//1135G7//2.4GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB (2280) / 512 GB (2230))//Hỗ trợ khe cắm HDD SATA 2.5 inch mở rộng (nâng cấp tối đa 2 TB)//*and*14\"//Full HD (1920 x 1080)//*and*Card rời//MX330 2GB//*and*HDMI//LAN (RJ45)//USB Type-C//2 x USB 3.1//Jack tai nghe 3.5 mm//1 x USB 2.0//*and*Windows 11 Home SL + Office Home & Student vĩnh viễn//*and*Vỏ nhựa//*and*Dài 328.7 mm - Rộng 239.5 mm - Dày 19.9 mm - Nặng 1.64 kg//*and*2022//*and*"
-   },
-   {
-      "key": "hp-pavilion-15-eg2035tx-i5-6k781pa",
-      "title": "Laptop HP Pavilion 15 eg2035TX i5 1235U/8GB/512GB/2GB MX550/Win11 (6K781PA)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/284142/Slider/vi-vn-hp-pavilion-15-eg2035tx-i5-6k781pa-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284142/Slider/vi-vn-hp-pavilion-15-eg2035tx-i5-6k781pa-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284142/Slider/vi-vn-hp-pavilion-15-eg2035tx-i5-6k781pa-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284142/Slider/vi-vn-hp-pavilion-15-eg2035tx-i5-6k781pa-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284142/Slider/vi-vn-hp-pavilion-15-eg2035tx-i5-6k781pa-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/284142/Slider/vi-vn-hp-pavilion-15-eg2035tx-i5-6k781pa-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/284142/Kit/hp-pavilion-15-eg2035tx-i5-6k781pa-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1235U//1.3GHz//*and*8 GB//DDR4 2 khe (1 khe 4 GB + 1 khe 4 GB)//3200 MHz//*and*512 GB SSD NVMe PCIe//*and*15.6\"//Full HD (1920 x 1080)//*and*Card rời//MX550 2GB//*and*USB Type-C//HDMI//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa - chiếu nghỉ tay bằng kim loại//*and*Dài 360.2 mm - Rộng 234 mm - Dày 17.9 mm - Nặng 1.74 kg//*and*2022//*and*"
-   },
-   {
-      "key": "asus-vivobook-x515ea-i7-ej1918w",
-      "title": "Laptop Asus VivoBook X515EA i7 1165G7/8GB/512GB/Win11 (EJ1918W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/273248/Slider/vi-vn-asus-vivobook-x515ea-i7-ej1918w-01.jpg*and*https://cdn.tgdd.vn/Products/Images/44/273248/Slider/vi-vn-asus-vivobook-x515ea-i7-ej1918w-02.jpg*and*https://cdn.tgdd.vn/Products/Images/44/273248/Slider/vi-vn-asus-vivobook-x515ea-i7-ej1918w-03.jpg*and*https://cdn.tgdd.vn/Products/Images/44/273248/Slider/vi-vn-asus-vivobook-x515ea-i7-ej1918w-04.jpg*and*https://cdn.tgdd.vn/Products/Images/44/273248/Slider/vi-vn-asus-vivobook-x515ea-i7-ej1918w-05.jpg*and*https://cdn.tgdd.vn/Products/Images/44/273248/Slider/vi-vn-asus-vivobook-x515ea-i7-ej1918w-06.jpg*and*https://cdn.tgdd.vn/Products/Images/44/273248/Slider/asus-vivobook-x515ea-i7-ej1918w-fixax-ab-07-1020x570.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i7//1165G7//2.8GHz//*and*8 GB//DDR4 (Onboard 4 GB + 1 khe 4 GB)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ thêm 1 khe cắm HDD SATA (nâng cấp tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel Iris Xe//*and*USB Type-C//2 x USB 2.0//HDMI//Jack tai nghe 3.5 mm//1 x USB 3.2//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 360 mm - Rộng 235 mm - Dày 19.9 mm - Nặng 1.8 kg//*and*2021//*and*"
-   },
-   {
-      "key": "apple-macbook-air-m2-2022",
-      "title": "Laptop Apple MacBook Air M2 2022 8GB/256GB/8-core GPU (MLXW3SA/A)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-thumbvideo-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282827/Slider/vi-vn-apple-macbook-air-m2-2022-8.jpg*and*",
-      "param_image": null,
-      "colors": "Xám*and*Bạc*and*Vàng*and*Xanh đen*and*",
-      "memories": "256GB 8-core GPU*and*512GB 10-core GPU*and*",
-      "params": "Apple M2//100GB/s//*and*8 GB//*and*256 GB SSD//*and*13.6\"//Liquid Retina (2560 x 1664)//*and*Card tích hợp//8 nhân GPU//*and*Jack tai nghe 3.5 mm//MagSafe 3//2 x Thunderbolt 3//*and*Có đèn bàn phím//*and*Mac OS//*and*Vỏ kim loại//*and*Dài 304.1 mm - Rộng 215 mm - Dày 11.3 mm - Nặng 1.24 kg//*and*6/2022//*and*"
-   },
-   {
-      "key": "dell-inspiron-15-3511-i3-p112f001cbl",
-      "title": "Laptop Dell Inspiron 15 3511 i3 1115G4/4GB/256GB/Office H&S/Win11 (P112F001CBL)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/264370/Slider/vi-vn-dell-inspiron-15-3511-i3-p112f001cbl-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/264370/Kit/dell-inspiron-15-3511-i3-p112f001cbl-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1115G4//3GHz//*and*4 GB//DDR4 2 khe (1 khe 4 GB + 1 khe rời)//2666 MHz//*and*256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB (2280) / 1 TB (2230))//Hỗ trợ khe cắm HDD SATA (nâng cấp tối đa 2 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//USB 2.0//Jack tai nghe 3.5 mm//2 x USB 3.2//*and*Windows 11 Home SL + Office Home & Student vĩnh viễn//*and*Vỏ nhựa//*and*Dài 358.5 mm - Rộng 235.5 mm - Dày 18.9 mm - Nặng 1.7 kg//*and*2021//*and*"
-   },
-   {
-      "key": "apple-macbook-pro-13-inch-m2-2022",
-      "title": "Laptop Apple MacBook Pro M2 2022 8GB/256GB/10-core GPU (MNEH3SA/A)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-01.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-02.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-03.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-04.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-05.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/apple-macbook-pro-m2-2022-16gb-6-1020x569.jpg*and*https://cdn.tgdd.vn/Products/Images/44/282828/Slider/vi-vn-apple-macbook-pro-13-inch-m2-2022-07.jpg*and*",
-      "param_image": null,
-      "colors": "Xám*and*Bạc*and*",
-      "memories": "256GB*and*512GB*and*",
-      "params": "Apple M2//100GB/s//*and*8 GB//*and*256 GB SSD//*and*13.3\"//Retina (2560 x 1600)//*and*Card tích hợp//10 nhân GPU//*and*Jack tai nghe 3.5 mm//2 x Thunderbolt 3//*and*Có đèn bàn phím//*and*Mac OS//*and*Vỏ kim loại//*and*Dài 304.1 mm - Rộng 212.4 mm - Dày 15.6 mm - Nặng 1.4 kg//*and*6/2022//*and*"
-   },
-   {
-      "key": "asus-zenbook-ux325ea-i5-kg656w",
-      "title": "Laptop Asus ZenBook UX325EA i5 1135G7/8GB/512GB/Cáp/Túi/Win11 (KG656W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-7.jpg*and*https://cdn.tgdd.vn/Products/Images/44/267786/Slider/vi-vn-asus-zenbook-ux325ea-i5-kg656w-8.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/267786/Kit/asus-zenbook-ux325ea-i5-kg656w-note.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i5//1135G7//2.4GHz//*and*8 GB//LPDDR4X (Onboard)//4267 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*13.3\"//Full HD (1920 x 1080) OLED//*and*Card tích hợp//Intel Iris Xe//*and*HDMI//2 x Thunderbolt 4 USB-C//1 x USB 3.2//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ kim loại nguyên khối//*and*Dài 304.2 mm - Rộng 203 mm - Dày 13.9 mm - Nặng 1.14 kg//*and*2021//*and*"
-   },
-   {
-      "key": "itel-able-1s-n4020-71006300027",
-      "title": "Laptop itel ABLE 1S N4020/4GB/256GB/Win11 (71006300027)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/265523/Slider/vi-vn-itel-able-1s-n4020-71006300027-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/265523/Kit/itel-able-1s-n4020-71006300027-n.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "Celeron//N4020//1.1GHz//*and*4 GB//DDR4 (Onboard)//2400 MHz//*and*256 GB SSD M.2 SATA 3 (Có thể tháo ra lắp thanh khác tối đa 1 TB)//Hỗ trợ thêm 1 khe cắm HDD SATA (nâng cấp tối đa 1 TB)//*and*14\"//HD (1366 x 768)//*and*Card tích hợp//Intel UHD 600//*and*2 x USB 3.0//HDMI//LAN (RJ45)//Jack tai nghe 3.5 mm//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 336.2 mm - Rộng 223 mm - Dày 19.9 mm - Nặng 1.4 kg//*and*2021//*and*"
-   },
-   {
-      "key": "asus-tuf-gaming-fx506hc-i5-hn144w",
-      "title": "Laptop Asus TUF Gaming F15 FX506HC i5 11400H/8GB/512GB/4GB RTX3050/144Hz/Win11 (HN144W)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636224790851.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636223870850.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636217460872.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636220890872.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636221880862.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636222950862.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636219090886.jpg*and*https://cdn.tgdd.vn/Products/Images/44/275262/Slider/asus-tuf-gaming-fx506hc-i5-hn144w637879636219880833.jpg*and*",
-      "param_image": null,
-      "colors": null,
-      "memories": null,
-      "params": "i5//11400H//2.7GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB + 1 khe rời)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//Hỗ trợ thêm 1 khe cắm SSD M.2 PCIe mở rộng (nâng cấp tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080) //144Hz//*and*Card rời//RTX 3050 4GB//*and*HDMI//LAN (RJ45)//3 x USB 3.2//Jack tai nghe 3.5 mm//Thunderbolt 4 USB-C//*and*Có đèn bàn phím//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 359 mm - Rộng 256 mm - Dày 24.5 mm - Nặng 2.3 kg//*and*2022//*and*"
-   },
-   {
-      "key": "lenovo-ideapad-3-15iau7-i3-82rk001mvn",
-      "title": "Laptop Lenovo Ideapad 3 15IAU7 i3 1215U/8GB/512GB/Win11 (82RK001MVN)",
-      "images": "https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-thumbvideo.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-1.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-6.jpg*and*https://cdn.tgdd.vn/Products/Images/44/287770/Slider/vi-vn-lenovo-ideapad-3-15iau7-i3-82rk001mvn-7.jpg*and*",
-      "param_image": "https://cdn.tgdd.vn/Products/Images/44/287770/Kit/82rk001mvn-note-fix.jpg",
-      "colors": null,
-      "memories": null,
-      "params": "i3//1215U//1.2GHz//*and*8 GB//DDR4 2 khe (1 khe 8 GB onboard + 1 khe trống)//3200 MHz//*and*512 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 1 TB)//*and*15.6\"//Full HD (1920 x 1080)//*and*Card tích hợp//Intel UHD//*and*HDMI//Jack tai nghe 3.5 mm//1 x USB 2.0//1 x USB 3.2//USB Type-C (hỗ trợ truyền dữ liệu, Power Delivery 3.0 và DisplayPort 1.2)//*and*Windows 11 Home SL//*and*Vỏ nhựa//*and*Dài 359.2 mm - Rộng 236.5 mm - Dày 19.9 mm - Nặng 1.63 kg//*and*2022//*and*"
+      "product_id": "hp-pavilion-14-dv2074tu-i5-7c0p3pa",
+      "images": "https://cdn.tgdd.vn/Products/Images/44/302204/Slider/vi-vn-hp-pavilion-14-dv2074tu-i5-7c0p3pa-slider-2.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302204/Slider/vi-vn-hp-pavilion-14-dv2074tu-i5-7c0p3pa-slider-3.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302204/Slider/vi-vn-hp-pavilion-14-dv2074tu-i5-7c0p3pa-slider-5.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302204/Slider/vi-vn-hp-pavilion-14-dv2074tu-i5-7c0p3pa-slider-4.jpg*and*https://cdn.tgdd.vn/Products/Images/44/302204/Slider/vi-vn-hp-pavilion-14-dv2074tu-i5-7c0p3pa-slider-6.jpg*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/bg_csmh_tgdd-min.png?v=11*and*//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/img_giaohang_tgdd-min.png*and*"
    }
 ]

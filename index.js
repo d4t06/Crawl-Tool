@@ -6,7 +6,7 @@ const start = async () => {
    let browser;
    try {
       browser = await puppeteer.launch({
-         headless: true,
+         headless: false,
       });
       if (browser) console.log(">>> browser open");
 

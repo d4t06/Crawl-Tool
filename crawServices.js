@@ -126,7 +126,7 @@ class crawServices {
 
          console.log(">>> open tab", url);
          await page.goto(url);
-         // await page.evaluate(scrollToBottom);
+         await page.evaluate(scrollToBottom);
 
          const Selector = ".detail";
 
@@ -136,12 +136,12 @@ class crawServices {
          productDetail.product_id = id;
 
          const productImages = await page.$eval(".detail", (el) => {
-            const nextImgBtn = el.querySelector(".owl-next");
-            nextImgBtn.click();
             const imageEls = el.querySelectorAll(".owl-item > a > img");
             let images = "";
 
             imageEls.forEach((el, index) => {
+               if (index === 0) return;
+
                const href =
                   el.getAttribute("src") || el.getAttribute("data-src");
                return index <= 7 ? (images += href + "*and*") : "";

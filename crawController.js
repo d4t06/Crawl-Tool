@@ -21,12 +21,12 @@ const scrawController = async (browserInstance) => {
       // >>> product detail
       let i = 0;
       let productDetails = [];
-      for (let item of mobiles) {
+      for (let item of laptops) {
          if (i >= 20) break;
          i++;
          const detail = await crawServices.crawProductsDetail(
             browser,
-            `https://www.thegioididong.com/dtdd/${item.product_id}`,
+            `https://www.thegioididong.com/laptop/${item.product_id}`,
             item.product_id
          );
          // const rate = await crawServices.crawRate(
@@ -41,7 +41,7 @@ const scrawController = async (browserInstance) => {
       console.log(">>> close browser");
 
       fs.writeFile(
-         "mobile-detail.json",
+         "laptop-detail.json",
          JSON.stringify(productDetails),
          (err) => {
             if (err) console.log(">>> write file error", err);
