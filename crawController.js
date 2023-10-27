@@ -1,81 +1,54 @@
+const fs = require("fs");
 const crawServices = require("./crawServices");
-const FPTcrawServices = require("./fpt_crawServices");
-
 const mobiles = require("./mobile.json");
+const FPTcrawServices = require("./fptCrawServices");
 const laptops = require("./laptop.json");
 
-const fs = require("fs");
+const tgdd = {
+   dtdd: "https://www.thegioididong.com/dtdd#c=42&o=17&pi=2",
+   laptop: "https://www.thegioididong.com/laptop#c=44&o=9&pi=2",
+};
+const fpt = "https://fptshop.com.vn/may-tinh-xach-tay";
 
 const scrawController = async (browserInstance) => {
-   const tddd = {
-      dtdd: "https://www.thegioididong.com/dtdd#c=42&o=17&pi=1",
-      laptop: "https://www.thegioididong.com/laptop#c=44&o=9&pi=1",
-   };
-   const fpt = "https://fptshop.com.vn/may-tinh-xach-tay";
    try {
-      let browser = await browserInstance;
+      const browser = await browserInstance;
+      if (!browser) return;
 
-      // >>> producst info
-      // const products = await crawServices.crawProduct(browser, tddd["dtdd"]);
+      // >>> producst
+      // const products = await crawServices.crawProduct(browser, tgdd["laptop"]);
 
       // >>> product detail
-      // let i = 1;
-      // let productDetails = [];
-      // for (let item of laptops) {
-      //    // if (i >= 20) break;
-      //    // i++;
-      //    console.log(">>> truy cap " + item.href);
-      //    const detail = await crawServices.crawProductsDetail(
-      //       browser,
-      //       `https://www.thegioididong.com/laptop/${item.href}`,
-      //       item.href
-      //    );
-      //    productDetails.push(detail);
-      // }
-
-      // >>> rate
-      let rates = []
-      let i = 1;
-       for (let item of mobiles) {
-         if (i > 2) break;
-         i ++;
-         const rate = await crawServices.crawRate(
+      let i = 0;
+      let productDetails = [];
+      for (let item of mobiles) {
+         if (i >= 20) break;
+         i++;
+         const detail = await crawServices.crawProductsDetail(
             browser,
-            `https://www.thegioididong.com/dtdd/${item.href}/danh-gia`,
-            item.href
+            `https://www.thegioididong.com/dtdd/${item.product_id}`,
+            item.product_id
          );
-         rates.push(rate);
+         // const rate = await crawServices.crawRate(
+         //       browser,
+         //       `https://www.thegioididong.com/dtdd/${item.href}/danh-gia`,
+         //       item.href
+         //    );
+         productDetails.push(detail);
       }
-      
 
       browser.close();
-      console.log("dong trinh duyet");
+      console.log(">>> close browser");
 
-      // fs.writeFile(
-      //    "laptop-detail.json",
-      //    JSON.stringify(productDetails),
-      //    (err) => {
-      //       if (err) console.log("ghi data vao file that bai", err);
-      //    }
-      // );
-
-      // fs.writeFile(
-      //    "laptop-detail.json",
-      //    JSON.stringify(productDetails),
-      //    (err) => {
-      //       if (err) console.log("ghi data vao file that bai", err);
-      //    }
-      // );
-
-         fs.writeFile(
-         "mobile-rate.json",
-         JSON.stringify(rates),
+      fs.writeFile(
+         "mobile-detail.json",
+         JSON.stringify(productDetails),
          (err) => {
-            if (err) console.log("ghi data vao file that bai", err);
+            if (err) console.log(">>> write file error", err);
          }
       );
 
-      // console.log(productDetails);
+      console.log(">>> file write");
    } catch (error) {
       console.log(error);
       browser.close();
