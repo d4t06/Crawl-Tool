@@ -1,19 +1,3 @@
-async function scrollToBottom() {
-   await new Promise((resolve) => {
-      const distance = 500; // should be less than or equal to window.innerHeight
-      const delay = 200;
-      const timer = setInterval(() => {
-         document.scrollingElement.scrollBy(0, distance);
-         if (
-            document.scrollingElement.scrollTop + window.innerHeight >=
-            document.scrollingElement.scrollHeight / 2
-         ) {
-            clearInterval(timer);
-            resolve();
-         }
-      }, delay);
-   });
-}
 function delay() {
    return new Promise(function (resolve) {
       setTimeout(resolve, 8000);
