@@ -2,6 +2,7 @@ type ProductLink = {
    link: string;
    name: string;
    image: string;
+   price: number;
 };
 
 type Product = {

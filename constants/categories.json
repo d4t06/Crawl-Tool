@@ -1,0 +1,101 @@
+[
+   {
+      "id": 4,
+      "name": "Mobile",
+      "name_ascii": "mobile",
+      "attribute_order": "1_2_3_5_7_6_4_8_9_10_11",
+      "hidden": false,
+      "brands": [
+         {
+            "id": 1,
+            "name": "iPhone",
+            "name_ascii": "iphone",
+            "image_url": "",
+            "category_id": 4
+         },
+         {
+            "id": 2,
+            "name": "Xiaomi",
+            "name_ascii": "xiaomi",
+            "image_url": "",
+            "category_id": 4
+         },
+         {
+            "id": 3,
+            "name": "Samsung",
+            "name_ascii": "samsung",
+            "image_url": "",
+            "category_id": 4
+         },
+         {
+            "id": 4,
+            "name": "Oppo",
+            "name_ascii": "oppo",
+            "image_url": "",
+            "category_id": 4
+         },
+         {
+            "id": 5,
+            "name": "Vivo",
+            "name_ascii": "vivo",
+            "image_url": "",
+            "category_id": 4
+         },
+         {
+            "id": 6,
+            "name": "Realme",
+            "name_ascii": "realme",
+            "image_url": "",
+            "category_id": 4
+         }
+      ],
+      "attributes": [
+         {
+            "id": 1,
+            "category_id": 4,
+            "name": "Announced",
+            "name_ascii": "announced"
+         },
+         {
+            "id": 11,
+            "category_id": 4,
+            "name": "Battery",
+            "name_ascii": "battery"
+         },
+         { "id": 3, "category_id": 4, "name": "Cpu", "name_ascii": "cpu" },
+         {
+            "id": 4,
+            "category_id": 4,
+            "name": "Demensions, Weight",
+            "name_ascii": "demensions--weight"
+         },
+         {
+            "id": 6,
+            "category_id": 4,
+            "name": "Font camera",
+            "name_ascii": "font-camera"
+         },
+         { "id": 5, "category_id": 4, "name": "Gpu", "name_ascii": "gpu" },
+         {
+            "id": 10,
+            "category_id": 4,
+            "name": "Material",
+            "name_ascii": "material"
+         },
+         { "id": 8, "category_id": 4, "name": "OS", "name_ascii": "os" },
+         {
+            "id": 7,
+            "category_id": 4,
+            "name": "Rear camera",
+            "name_ascii": "rear-camera"
+         },
+         {
+            "id": 2,
+            "category_id": 4,
+            "name": "Screen",
+            "name_ascii": "screen"
+         },
+         { "id": 9, "category_id": 4, "name": "Sim", "name_ascii": "sim" }
+      ]
+   }
+]

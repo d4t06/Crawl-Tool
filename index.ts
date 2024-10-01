@@ -1,14 +1,14 @@
-import puppeteer from "puppeteer-core";
+import puppeteer, { executablePath } from "puppeteer-core";
 import CrawController from "./crawController";
 
 const start = async () => {
    try {
       const browser = await puppeteer.launch({
          headless: false,
-         browser: "firefox",
-         extraPrefsFirefox: {},
-         dumpio: true,
-         executablePath: "/opt/firefox/firefox",
+         // browser: "firefox",
+         // extraPrefsFirefox: {},
+         // dumpio: true,
+         executablePath: executablePath("chrome"),
       });
       if (browser) console.log(">>> browser open");
 

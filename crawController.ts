@@ -1,6 +1,6 @@
 import { Browser } from "puppeteer-core";
 import crawServices from "./crawServices";
-import { writeFile } from "./utils";
+import { writeJsonFile } from "./utils";
 
 // const tgdd = {
 //    dtdd: "https://www.thegioididong.com/dtdd#c=42&o=13&pi=1",
@@ -15,7 +15,7 @@ const CrawController = async (browser: Browser) => {
 
       browser.close();
 
-      writeFile(products, "products.json");
+      writeJsonFile(products, "products");
    } catch (error) {
       console.log(error);
       browser?.close();

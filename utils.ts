@@ -56,7 +56,26 @@ export const initProductObject = (data: Partial<Product>) => {
    return newProduct;
 };
 
-export const writeFile = (data: any, filename: string) =>
-   fs.writeFile("results/" + filename, JSON.stringify(data), (err) => {
+export function getName(existingNames: string[], name: string) {
+   if (!existingNames.includes(name + ".json")) return name;
+
+   let counter = 1;
+   let newName = name;
+
+   while (existingNames.includes(newName + ".json")) {
+      counter++;
+      newName = `${name} (${counter})`;
+   }
+
+   return newName;
+}
+
+export const writeJsonFile = (data: any, filename: string) => {
+   const files = fs.readdirSync("results");
+
+   const name = getName(files, filename);
+
+   fs.writeFile("results/" + name + ".json", JSON.stringify(data), (err) => {
       if (err) console.log(">>> write file error", err);
    });
+};
