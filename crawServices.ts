@@ -1,245 +1,194 @@
-import { Browser } from "puppeteer";
-import { generateId, initProductObject, scrollToBottom } from "./utils";
+import { Browser } from "puppeteer-core";
+import { initProductObject } from "./utils";
+import { attributeTableOrder, categories } from "./constant";
+
+type Category = (typeof categories)[0];
 
 class CrawService {
-   crawProductLinks = async (browser, url, id) => {
+   crawProductLinks = async (browser, url) => {
       try {
          let page = await browser.newPage();
 
-         console.log(">>> mo tab moi");
          await page.goto(url);
-         // await page.setViewport({ width: 1080, height: 1024 });
 
          const Selector = ".listproduct";
          await page.waitForSelector(Selector);
 
-         const productDetailLinks = await page.$$eval(
-            ".main-contain",
-            (els) => {
-               const links = els.map((el) => {
-                  // const hrefEl = el.querySelector
-                  const href = el ? el.getAttribute("href") : null;
-                  return {
-                     href: "https://www.thegioididong.com" + href,
-                     key: href.slice(6),
-                  };
-               });
-               return links;
-            }
+         const productLinks = await page.$$eval(".main-contain", (els) =>
+            els.map((el) => {
+               const href = el ? el.getAttribute("href") : null;
+               const nameEle = el.querySelector("h3");
+               const imageELe = el.querySelector(
+                  ".item-img img"
+               ) as HTMLImageElement;
+
+               return {
+                  link: "https://www.thegioididong.com" + href,
+                  name: nameEle.textContent.trim(),
+                  image:
+                     imageELe.src || imageELe.getAttribute("data-src") || "",
+               } as ProductLink;
+            })
          );
-         console.log(">>> dong tab");
          await browser.close();
 
-         return productDetailLinks;
+         return productLinks;
       } catch (error) {
          console.log(">>> co loi trong luc mo tab", error);
       }
    };
 
-   crawProduct = async (browser: Browser, url) => {
+   crawProduct = async (browser: Browser, category: string) => {
       try {
-         const categoryAttributes = [
-            {
-               id: 1,
-               category_id: 40,
-               name: "Screen",
-               name_ascii: "screen",
-            },
-         ];
-
-         const attributeTableOrder: Record<
-            string,
-            { name_ascii: string; take: number[] }
-         > = {
-            "1": {
-               name_ascii: "screen",
-               take: [2, 1],
-            },
-            // announced: {
-            //    index: 10,
-            //    values: [3],
-            // },
-         };
-
          const page = await browser.newPage();
          page.setDefaultTimeout(10000);
 
-         console.log(">>> Open tab", url);
-         await page.goto(url);
-         await page.evaluate(scrollToBottom);
+         // console.log(">>> Open tab", "https://www.thegioididong.com/dtdd");
+         await page.goto("https://www.thegioididong.com/dtdd");
 
-         const Selector = ".detail";
-         await page.waitForSelector(Selector);
+         const products: Product[] = [];
 
-         const product = initProductObject({
-            category_id: categoryAttributes[0].category_id,
-         });
+         const targetCategory = categories.find(
+            (c) => c.name_ascii === category
+         );
 
-         const productName = await page.$eval(
-            ".product-name h1",
-            (ele: HTMLElement) => {
-               return ele.innerText.substring(11);
+         if (!targetCategory) return;
+
+         const productLinks = await page.$$eval(".main-contain", (els) =>
+            els.map((el) => {
+               const href = el ? el.getAttribute("href") : null;
+               const nameEle = el.querySelector("h3");
+               const imageELe = el.querySelector(
+                  ".item-img img"
+               ) as HTMLImageElement;
+
+               return {
+                  link: "https://www.thegioididong.com" + href,
+                  name: nameEle.innerText.trim(),
+                  image:
+                     imageELe.src || imageELe.getAttribute("data-src") || "",
+               } as ProductLink;
+            })
+         );
+
+         for (let index = 0; index < productLinks.length; index++) {
+            if (index > 1) continue;
+
+            const productLink = productLinks[index];
+
+            console.log(">>> Open tab: ", productLink.link);
+
+            await page.goto(productLink.link);
+
+            const Selector = ".detail";
+            await page.waitForSelector(Selector);
+
+            const product = initProductObject({
+               category_id: targetCategory.id,
+               name: productLink.name,
+               image: productLink.image,
+            });
+
+            /** price */
+            const price = await page.$eval(".box-price-present", (el) =>
+               el.textContent.trim().replaceAll(".", "").slice(0, -1)
+            );
+
+            product.price = +price;
+
+            /** brand */
+            const targetBrand = targetCategory.brands.find(
+               (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase()
+            );
+
+            if (targetBrand) {
+               product.brand_id = targetBrand.id;
             }
-         );
 
-         product.name = productName;
-         product.name_ascii = generateId(productName);
+            /** colors */
+            const colors = await page.$$eval(".box03.color .item", (eles) =>
+               eles.map((el) => el.textContent.trim())
+            );
+            product.colors = colors;
 
-         const colorNames = await page.$$eval(".box03.color .item", (eles) => {
-            // eles.forEach((el) => {
-            //    ({
-            //       name: el.innerText.trim(),
-            //       name_ascii: generateId(el.innerText.trim()),
-            //    }) as Color;
-            // });/
-            return eles.map((el) => el.textContent.trim());
-         });
+            /** variant */
+            const variantName = await page.$eval(
+               ".box03.group.desk .item.act",
+               (ele) => ele.textContent.trim()
+            );
+            product.variants = [variantName];
 
-         product.colors = colorNames.map((c) => ({
-            name: c,
-            name_ascii: generateId(c),
-         }));
+            /** attributes */
+            const attributes = await page.$$eval(
+               ".box-specifi > a",
+               (eles, [targetCategory, attributeTableOrder]) => {
+                  /**
+                   * a
+                   * ul .text-specifi
+                   *    li
+                   */
 
-         const variantName = await page.$eval(
-            ".box03.group.desk .item.act",
-            (ele) => ele.textContent.trim()
-         );
+                  const attributes: Attribute[] = [];
 
-         product.colors = colorNames.map((c) => ({
-            name: c,
-            name_ascii: generateId(c),
-         }));
+                  eles.forEach((el) => {
+                     const indexAttr = el.getAttribute("data-index");
 
-         product.variants = [
-            { name: variantName, name_ascii: generateId(variantName) },
-         ];
+                     const attributeInfo = attributeTableOrder[`${indexAttr}`];
+                     if (!attributeInfo) return;
 
-         const attributes = await page.$$eval(
-            ".box-specifi > a",
-            (eles, [categoryAttributes, attributeTableOrder]) => {
-               /**
-                * a
-                * ul .text-specifi
-                *    li
-                */
+                     const categoryAttributes =
+                        targetCategory.attributes as Category["attributes"];
 
-               return eles.map((el) => {
-                  const indexAttr = el.getAttribute("data-index");
+                     const categoryAttr = categoryAttributes.find(
+                        (cA) => cA.name_ascii === attributeInfo.name_ascii
+                     );
 
-                  const attributeInfo = attributeTableOrder[`${indexAttr}`];
+                     if (!categoryAttr) return;
 
-                  // @ts-ignore
-                  // const categoryAttr = categoryAttributes.find(
-                  //    (cA) => cA.name_ascii === attributeInfo.name_ascii
-                  // );
+                     const testEles = el.nextElementSibling.querySelectorAll(
+                        "li aside:nth-child(2)"
+                     );
 
-                  const testEles = el.nextElementSibling.querySelectorAll(
-                     "li aside:nth-child(2)"
-                  );
+                     let value = "";
+                     attributeInfo.take.forEach((indexToTake, index) => {
+                        if (index === 0)
+                           value += testEles[indexToTake].textContent.trim();
+                        else
+                           value +=
+                              "/n " + testEles[indexToTake].textContent.trim();
+                     });
 
-                  let value = "";
-                  attributeInfo.take.forEach((indexToTake, index) => {
-                     if (index === 0)
-                        value += testEles[indexToTake].textContent.trim();
-                     else
-                        value +=
-                           "/n " + testEles[indexToTake].textContent.trim();
+                     attributes.push({
+                        value,
+                        category_attribute_id: categoryAttr.id,
+                     });
                   });
 
-                  return {
-                     value,
-                     category_attribute_id: 1,
-                  } as Attribute;
-               });
-            },
-            [categoryAttributes, attributeTableOrder]
-         );
+                  return attributes;
+               },
+               [targetCategory, attributeTableOrder]
+            );
 
-         product.attributes = attributes;
+            product.attributes = attributes;
 
-         // product.colors = colors;
+            /** sliders */
+            const images = await page.$$eval(
+               ".box_left .gallery-img .owl-carousel .item-img img",
+               (eles) => {
+                  return eles.map(
+                     (el) => el.src || el.getAttribute("data-src")
+                  );
+               }
+            );
+            product.sliders = images;
 
-         // const productImages = await page.$eval(".detail", (el) => {
-         //    const imageEls = el.querySelectorAll(".owl-item > a > img");
-         //    let images = "";
+            products.push(product);
 
-         //    imageEls.forEach((el, index) => {
-         //       if (index === 0) return;
+            // await page.close();
+            console.log(">>> close tab");
+         }
 
-         //       const href =
-         //          el.getAttribute("src") || el.getAttribute("data-src");
-         //       return index <= 7 ? (images += href + "*and*") : "";
-         //    });
-         //    // const paramImgEl = el.querySelector(".img-main > img");
-         //    // const param_image = paramImgEl
-         //    //    ? "https:" + paramImgEl.getAttribute("src")
-         //    //    : null;
-         //    return { images };
-         // });
-         // const { images } = productImages;
-
-         // productDetail.param_image = param_image;
-
-         // lay cac option
-
-         // const options = await page.$$eval(".box03.group.desk", (els) => {
-         //    let memories = "";
-         //    let colors = "";
-
-         //    if (els.length > 1) {
-         //       const optionEls = els[0]?.querySelectorAll("a");
-         //       optionEls?.forEach((el) => {
-         //          const memory = el.innerText;
-         //          return (memories += memory + "*and*");
-         //       });
-
-         //       const colorEls = els[1]?.querySelectorAll("a");
-         //       colorEls?.forEach((el) => {
-         //          const color = el.innerText;
-         //          return (colors += color + "*and*");
-         //       });
-         //    } else if (els) {
-         //       const colorEls = els[0]?.querySelectorAll("a");
-         //       colorEls?.forEach((el) => {
-         //          const color = el.innerText;
-         //          return (colors += color + "*and*");
-         //       });
-         //    }
-
-         //    return [colors, memories];
-         // });
-
-         // productDetail.colors = options[0] ? options[0] : null;
-
-         // productDetail.memories = options[1] ? options[1] : null;
-
-         // lay anh param
-         // const paramImage = await page.$eval(".img-main > img", (el) => {
-         //    return el ? el.getAttribute("src") : null;
-         // });
-         // productDetail.paramImage = paramImage;
-
-         // lay param
-         // const params = await page.$eval(".parameter", (el) => {
-         //    let paramss = "";
-         //    const paramEls = el.querySelectorAll(".liright");
-         //    paramEls.forEach((el) => {
-         //       let param = "";
-         //       const spanEls = el.querySelectorAll("span");
-         //       spanEls.forEach((span) => {
-         //          param += span.innerText + "//";
-         //       });
-
-         //       return (paramss += param + "*and*");
-         //    });
-         //    return paramss;
-         // });
-         // productDetail.params = params;
-
-         await page.close();
-         console.log(">>> close tab ", url);
-         // console.log(productDetail);
-         return product;
+         return products;
       } catch (error) {
          console.log("service error ", error);
       }

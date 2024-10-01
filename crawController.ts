@@ -1,9 +1,6 @@
-import { Browser } from "puppeteer";
+import { Browser } from "puppeteer-core";
 import crawServices from "./crawServices";
-
-// const mobiles = require("./mobile.json");
-// const FPTcrawServices = require("./fptCrawServices");
-// const laptops = require("./laptop.json");
+import { writeFile } from "./utils";
 
 // const tgdd = {
 //    dtdd: "https://www.thegioididong.com/dtdd#c=42&o=13&pi=1",
@@ -14,36 +11,11 @@ const CrawController = async (browser: Browser) => {
    try {
       if (!browser) return;
 
-      // >>> producst
-      // const products = await crawServices.crawProductLinks(
-      //    browser,
-      //    tgdd["dtdd"]
-      // );
-
-      const product = await crawServices.crawProduct(
-         browser,
-         `https://www.thegioididong.com/dtdd/iphone-16`
-      );
-
-      // >>> product detail
-      // let i = 0;
-      // let productDetails = [];
-      // for (let item of laptops) {
-      //    if (i >= 20) break;
-      //    i++;
-      //    const detail = await crawServices.crawProductsDetail(
-      //       browser,
-      //       `https://www.thegioididong.com/laptop/${item.product_id}`,
-      //       item.product_id
-      //    );
-
-      //    productDetails.push(detail);
-      // }
+      const products = await crawServices.crawProduct(browser, "mobile");
 
       browser.close();
-      console.log(">>> close browser");
 
-      console.log("check products", product);
+      writeFile(products, "products.json");
    } catch (error) {
       console.log(error);
       browser?.close();

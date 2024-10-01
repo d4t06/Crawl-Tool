@@ -41,21 +41,22 @@ export const generateId = (name: string): string => {
 
 export const initProductObject = (data: Partial<Product>) => {
    const newProduct: Product = {
-      image_url: "",
       name: "",
-      name_ascii: "",
       brand_id: 0,
       category_id: 0,
+      image: "",
       attributes: [],
+      sliders: [],
       colors: [],
       variants: [],
+      price: 0,
       ...data,
    };
 
    return newProduct;
 };
 
-export const writeFile = (data: any) =>
-   fs.writeFile("laptop-detail.json", JSON.stringify(data), (err) => {
+export const writeFile = (data: any, filename: string) =>
+   fs.writeFile("results/" + filename, JSON.stringify(data), (err) => {
       if (err) console.log(">>> write file error", err);
    });

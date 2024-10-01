@@ -1,20 +1,19 @@
+type ProductLink = {
+   link: string;
+   name: string;
+   image: string;
+};
+
 type Product = {
    name: string;
-   name_ascii: string;
    category_id: number;
    brand_id: number;
-   image_url: string;
-   colors: Color[];
-   variants: Variant[];
+   colors: string[];
+   variants: string[];
    attributes: Attribute[];
-
-   // category: Category;
-   // description: Description;
-
-   // colors: ProductColor[];
-   // combines: ProductCombine[];
-   // comments_data: ProductComment[];
-   // default_variant: DefaultVariant;
+   image: string;
+   sliders: string[];
+   price: number;
 };
 
 type Color = {
