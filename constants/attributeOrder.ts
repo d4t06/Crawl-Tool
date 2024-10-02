@@ -1,8 +1,12 @@
+import { take } from "puppeteer-core/lib/esm/third_party/rxjs/rxjs.js";
+
 export type AttributeInfo = { name_ascii: string; take: number[] };
 
-export type AttributeTable = Record<string, AttributeInfo[]>;
+export type AttributeMap = Record<string, AttributeInfo[]>;
 
-export const attributeTableOrder: AttributeTable = {
+export type AttributeTable = Record<"dtdd" | "laptop", AttributeMap>;
+
+const mobileAttributeOrder: AttributeMap = {
    "1": [
       {
          name_ascii: "screen",
@@ -61,6 +65,69 @@ export const attributeTableOrder: AttributeTable = {
          take: [0, 2],
       },
    ],
+};
+
+const laptopAttributeOrder: AttributeMap = {
+   "1": [
+      {
+         name_ascii: "processor",
+         take: [0, 1, 2],
+      },
+   ],
+   "2": [
+      {
+         name_ascii: "ram",
+         take: [0, 1],
+      },
+      {
+         name_ascii: "storage",
+         take: [4],
+      },
+   ],
+   "3": [
+      {
+         name_ascii: "screen",
+         take: [0, 1, 2],
+      },
+   ],
+   "4": [
+      {
+         name_ascii: "graphic-card",
+         take: [0],
+      },
+   ],
+   "5": [
+      {
+         name_ascii: "connectivity",
+         take: [0],
+      },
+      {
+         name_ascii: "keyboard-light",
+         take: [4],
+      },
+   ],
+   "6": [
+      {
+         name_ascii: "weight",
+         take: [1],
+      },
+      {
+         name_ascii: "material",
+         take: [2],
+      },
+   ],
+   "7": [
+      {
+         name_ascii: "battery",
+         take: [0],
+      },
+      { name_ascii: "announced", take: [3] },
+   ],
+};
+
+export const attributeTable: AttributeTable = {
+   dtdd: mobileAttributeOrder,
+   laptop: laptopAttributeOrder,
 };
 
 // "attributes": [

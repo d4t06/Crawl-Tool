@@ -1,10 +1,13 @@
 import { Browser } from "puppeteer-core";
 import { initProductObject } from "./utils";
-import { AttributeInfo, attributeTableOrder } from "./constants/attributeOrder";
+import {
+   AttributeMap,
+   AttributeTable,
+   attributeTable,
+} from "./constants/attributeOrder";
 
 import * as categories from "./constants/categories.json";
 import * as skipList from "./constants/skip.json";
-import { retry } from "puppeteer-core/lib/esm/third_party/rxjs/rxjs.js";
 
 type Category = (typeof categories)[0];
 
@@ -48,33 +51,38 @@ class CrawService {
       }
    };
 
-   crawProduct = async (browser: Browser, category: string) => {
+   crawProduct = async (
+      browser: Browser,
+      category: "dtdd" | "laptop",
+      LIMIT: number
+   ) => {
       try {
          const page = await browser.newPage();
          page.setDefaultTimeout(0);
 
-         // console.log(">>> Open tab", "https://www.thegioididong.com/dtdd");
-         await page.goto("https://www.thegioididong.com/dtdd#c=42&o=13&pi=1");
+         await page.goto(`https://www.thegioididong.com/${category}`);
 
          const products: Product[] = [];
 
          const targetCategory = categories.find(
-            (c) => c.name_ascii === category
+            (c) => c.name_ascii === (category === "dtdd" ? "mobile" : "laptop")
          );
 
-         if (!targetCategory) return;
+         if (!targetCategory) return [];
 
          const productLinks = await page.$$eval(
-            ".main-contain",
-            (els, [skipList]) => {
+            ".listproduct .main-contain",
+            (els, [category, skipList]) => {
                const links: ProductLink[] = [];
 
                els.forEach((el) => {
                   const preOrderEle = el.querySelector(".preorder");
                   if (preOrderEle) return;
 
-                  const variantBoxEle = el.querySelector(".prods-group");
-                  if (!variantBoxEle) return;
+                  if (category === "dtdd") {
+                     const variantBoxEle = el.querySelector(".prods-group");
+                     if (!variantBoxEle) return;
+                  }
 
                   const href = el ? el.getAttribute("href") : null;
                   const nameEle = el.querySelector("h3");
@@ -87,9 +95,11 @@ class CrawService {
 
                   if (skipList.includes(productUrl)) return;
 
+                  const name = nameEle.innerText.trim();
+
                   links.push({
                      link: productUrl,
-                     name: nameEle.innerText.trim(),
+                     name: name.slice(0, name.indexOf("(")).trim(),
                      image:
                         imageELe.src || imageELe.getAttribute("data-src") || "",
                      price:
@@ -102,22 +112,17 @@ class CrawService {
 
                return links;
             },
-            [skipList]
+            [category, skipList]
          );
 
          for (let index = 0; index < productLinks.length; index++) {
-            if (index > 1) continue;
+            if (index + 1 > LIMIT) continue;
 
             const productLink = productLinks[index];
-
             console.log(">>> Open tab: ", productLink.link);
 
             await page.goto(productLink.link);
-
-            const Selector = ".detail";
-            await page
-               .waitForSelector(Selector)
-               .catch((err) => console.log("Time out"));
+            await page.waitForSelector(".detail");
 
             const product = initProductObject({
                category_id: targetCategory.id,
@@ -135,41 +140,54 @@ class CrawService {
                product.brand_id = targetBrand.id;
             }
 
-            /** colors */
-            const colors = await page.$$eval(".box03.color .item", (eles) =>
-               eles.map((el) => el.textContent.trim())
-            );
-            product.colors = colors;
+            if (category === "dtdd") {
+               /** colors */
+               const colors = await page.$$eval(".box03.color .item", (eles) =>
+                  eles.map((el) => el.textContent.trim())
+               );
+               product.colors = colors;
 
-            /** variant */
-            const variantName = await page.$eval(
-               ".box03.group.desk .item.act",
-               (ele) => ele.textContent.trim()
-            );
-            product.variants = [variantName];
+               /** variant */
+               const variantName = await page.$eval(
+                  ".box03.group.desk .item.act",
+                  (ele) => ele.textContent.trim()
+               );
+               product.variants = [variantName];
+            }
+
+            if (category === "laptop") {
+               product.colors = ["default"];
+               product.variants = ["default"];
+            }
 
             /** attributes */
             const attributes = await page.$$eval(
                ".box-specifi > a",
-               (eles, [targetCategory, attributeTableOrder]) => {
+               (eles, [category, targetCategory, attributeTable]) => {
                   /**
                    * a
                    * ul .text-specifi
                    *    li
                    */
 
+                  const _targetCategory = targetCategory as Category;
+                  const crawCategory = category as "dtdd" | "laptop";
+                  const _attributeTable = attributeTable as AttributeTable;
+
                   const attributes: Attribute[] = [];
+
+                  const attributeMapByCategory: AttributeMap =
+                     _attributeTable[crawCategory];
 
                   eles.forEach((el) => {
                      const indexAttr = el.getAttribute("data-index");
 
-                     const attributeInfos: AttributeInfo[] =
-                        attributeTableOrder[`${indexAttr}`];
+                     const attributeInfos =
+                        attributeMapByCategory[`${indexAttr}`];
                      if (!attributeInfos) return;
 
                      for (const attributeInfo of attributeInfos) {
-                        const categoryAttributes =
-                           targetCategory.attributes as Category["attributes"];
+                        const categoryAttributes = _targetCategory.attributes;
 
                         const categoryAttr = categoryAttributes.find(
                            (cA) => cA.name_ascii === attributeInfo.name_ascii
@@ -200,7 +218,7 @@ class CrawService {
 
                   return attributes;
                },
-               [targetCategory, attributeTableOrder]
+               [category, targetCategory, attributeTable]
             );
 
             product.attributes = attributes;
@@ -215,6 +233,35 @@ class CrawService {
                }
             );
             product.sliders = images;
+
+            // await page.locator('#tab-spec h2[data-tab="tab-2').click();
+
+            /** review */
+            const desc = await page.$$eval(
+               ".description > div > * ",
+               (eles) => {
+                  let descHtml = "";
+
+                  eles.forEach((el, index) => {
+                     if (index === 0 || index > 9) return;
+
+                     if (el.textContent) {
+                        descHtml += el.outerHTML;
+
+                        // image
+                     } else {
+                        const imageEl = el.querySelector("img");
+                        descHtml += `<img src="${
+                           imageEl.src || imageEl.getAttribute("data-src") || ""
+                        }" />`;
+                     }
+                  });
+
+                  return descHtml;
+               }
+            );
+
+            product.description = desc;
 
             products.push(product);
 

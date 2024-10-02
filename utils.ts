@@ -50,6 +50,7 @@ export const initProductObject = (data: Partial<Product>) => {
       colors: [],
       variants: [],
       price: 0,
+      description: "",
       ...data,
    };
 

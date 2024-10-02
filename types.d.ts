@@ -15,6 +15,7 @@ type Product = {
    image: string;
    sliders: string[];
    price: number;
+   description: string;
 };
 
 type Color = {
