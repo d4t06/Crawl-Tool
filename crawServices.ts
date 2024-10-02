@@ -99,7 +99,10 @@ class CrawService {
 
                   links.push({
                      link: productUrl,
-                     name: name.slice(0, name.indexOf("(")).trim(),
+                     name:
+                        category === "dtdd"
+                           ? name
+                           : name.slice(0, name.indexOf("(")).trim(),
                      image:
                         imageELe.src || imageELe.getAttribute("data-src") || "",
                      price:
@@ -227,9 +230,14 @@ class CrawService {
             const images = await page.$$eval(
                ".box_left .gallery-img .owl-carousel .item-img img",
                (eles) => {
-                  return eles.map(
-                     (el) => el.src || el.getAttribute("data-src")
-                  );
+                  const url: string[] = [];
+
+                  eles.forEach((el, index) => {
+                     if (index > 3) return;
+                     url.push(el.src || el.getAttribute("data-src"));
+                  });
+
+                  return url;
                }
             );
             product.sliders = images;
@@ -245,16 +253,24 @@ class CrawService {
                   eles.forEach((el, index) => {
                      if (index === 0 || index > 9) return;
 
-                     if (el.textContent) {
-                        descHtml += el.outerHTML;
+                     if (el.tagName.includes("H") || el.tagName.includes("P"))
+                        if (el.textContent) {
+                           // h5
+                           if (el.tagName.includes("H"))
+                              descHtml += `<h5>${el.textContent}</h5>`;
+                           // p
+                           else descHtml += `<p>${el.textContent}</p>`;
 
-                        // image
-                     } else {
-                        const imageEl = el.querySelector("img");
-                        descHtml += `<img src="${
-                           imageEl.src || imageEl.getAttribute("data-src") || ""
-                        }" />`;
-                     }
+                           // image
+                        } else {
+                           const imageEl = el.querySelector("img");
+                           if (imageEl)
+                              descHtml += `<img src="${
+                                 imageEl.src ||
+                                 imageEl.getAttribute("data-src") ||
+                                 ""
+                              }" />`;
+                        }
                   });
 
                   return descHtml;

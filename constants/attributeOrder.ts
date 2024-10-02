@@ -74,7 +74,7 @@ const laptopAttributeOrder: AttributeMap = {
          take: [0, 1, 2],
       },
    ],
-   "2": [
+   "3": [
       {
          name_ascii: "ram",
          take: [0, 1],
@@ -84,19 +84,19 @@ const laptopAttributeOrder: AttributeMap = {
          take: [4],
       },
    ],
-   "3": [
+   "4": [
       {
          name_ascii: "screen",
          take: [0, 1, 2],
       },
    ],
-   "4": [
+   "6": [
       {
          name_ascii: "graphic-card",
          take: [0],
       },
    ],
-   "5": [
+   "7": [
       {
          name_ascii: "connectivity",
          take: [0],
@@ -106,7 +106,7 @@ const laptopAttributeOrder: AttributeMap = {
          take: [4],
       },
    ],
-   "6": [
+   "15": [
       {
          name_ascii: "weight",
          take: [1],
@@ -116,7 +116,7 @@ const laptopAttributeOrder: AttributeMap = {
          take: [2],
       },
    ],
-   "7": [
+   "16": [
       {
          name_ascii: "battery",
          take: [0],

@@ -7,17 +7,17 @@ import { writeJsonFile } from "./utils";
 //    laptop: "https://www.thegioididong.com/laptop#c=44&o=9&pi=2",
 // };
 
-const LIMIT = 1;
+const LIMIT = 5;
 
 const CrawController = async (browser: Browser) => {
    try {
       if (!browser) return;
 
-      const products = await crawServices.crawProduct(browser, "laptop", LIMIT);
+      const products = await crawServices.crawProduct(browser, "dtdd", LIMIT);
 
       browser.close();
 
-      writeJsonFile(products, "laptops");
+      writeJsonFile(products, "dtdd");
    } catch (error) {
       console.log(error);
       browser?.close();
