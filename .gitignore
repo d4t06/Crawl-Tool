@@ -6,5 +6,7 @@ npm-debug.log*
 
 results/*
 
+constants/categories.json
+
 
 .vscode

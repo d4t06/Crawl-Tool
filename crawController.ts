@@ -18,12 +18,11 @@ const CrawController = async (browser: Browser) => {
       //    link: "https://www.thegioididong.com/laptop/acer-aspire-a315-44p-r9w8-r7-nxksjsv002",
       // });
 
-      browser.close();
-
       if (products) writeJsonFile(products, config.name);
+
+      browser.close();
    } catch (error) {
       console.log(error);
-      browser?.close();
       console.log(">>> loi browser controller");
    }
 };

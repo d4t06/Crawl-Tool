@@ -1,23 +1,17 @@
 import { Browser, Page } from "puppeteer-core";
-import { generateId, initProductObject } from "./utils";
+import { initProductObject } from "./utils";
 
 import * as skipList from "./constants/skip.json";
 import { Category } from "./constants/categories";
 import { AttributeData } from "./constants/attributeOrder";
 import { Config } from "./constants/config";
 
-type RequireProductData = {
-   name: string;
-   image: string;
-   price: number;
-};
-
 const craw = async (
    url: string,
    page: Page,
    config: Config,
    targetCategory: Category,
-   data: ProductLink,
+   data: ProductLink
 ) => {
    try {
       console.log(">>> Open tab: ", url);
@@ -36,7 +30,7 @@ const craw = async (
 
       /** brand */
       const targetBrand = targetCategory.brands.find(
-         (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase(),
+         (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase()
       );
 
       if (targetBrand) {
@@ -46,13 +40,13 @@ const craw = async (
       if (data.hasVariant) {
          /** colors */
          const colors = await page.$$eval(".box03.color .item", (eles) =>
-            eles.map((el) => el.textContent.trim()),
+            eles.map((el) => el.textContent.trim())
          );
          product.colors = colors;
 
          /** variant */
          const variantName = await page.$eval(".box03.group.desk .item.act", (ele) =>
-            ele.textContent.trim(),
+            ele.textContent.trim()
          );
          product.variants = [variantName];
       } else {
@@ -81,13 +75,13 @@ const craw = async (
 
                for (const attributeData of attributeMap) {
                   const categoryAttr = targetCategory.attributes.find(
-                     (cA) => cA.name_ascii === attributeData.name_ascii,
+                     (cA) => cA.name_ascii === attributeData.name_ascii
                   );
 
                   if (!categoryAttr) return;
 
                   const testEles = el.nextElementSibling.querySelectorAll(
-                     "li aside:nth-child(2)",
+                     "li aside:nth-child(2)"
                   );
 
                   let value = "";
@@ -109,7 +103,7 @@ const craw = async (
 
             return attributes;
          },
-         [targetCategory, config],
+         [targetCategory, config]
       );
 
       product.attributes = attributes;
@@ -126,7 +120,7 @@ const craw = async (
             });
 
             return images;
-         },
+         }
       );
       product.sliders = images;
 
@@ -185,10 +179,10 @@ class CrawService {
          const products: Product[] = [];
 
          const targetCategory = config.categories.find(
-            (c) => c.name_ascii === config.category,
+            (c) => c.name_ascii === config.category
          );
 
-         if (!targetCategory) return;
+         if (!targetCategory) return [];
 
          const productDatas = await page.$$eval(
             ".main-contain",
@@ -224,7 +218,7 @@ class CrawService {
 
                return links;
             },
-            [skipList],
+            [skipList]
          );
 
          // await page.evaluate(() => {
@@ -239,7 +233,7 @@ class CrawService {
                page,
                config,
                targetCategory,
-               productData,
+               productData
             );
 
             products.push(p);
@@ -251,16 +245,12 @@ class CrawService {
       }
    };
 
-   crawOneProduct = async (
-      browser: Browser,
-      config: Config,
-      data: ProductLink,
-   ) => {
+   crawOneProduct = async (browser: Browser, config: Config, data: ProductLink) => {
       try {
          const page = await browser.newPage();
 
          const targetCategory = config.categories.find(
-            (c) => c.name_ascii === config.category,
+            (c) => c.name_ascii === config.category
          );
 
          if (!targetCategory) return;
