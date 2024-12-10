@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mobile",
+        "brands":
+        [
+            "iPhone",
+            "Xiaomi",
+            "Samsung",
+            "Oppo",
+            "Vivo",
+            "Realme"
+        ],
+        "attributes":
+        [
+            "Announced",
+            "Demensions, Weight",
+            "Material",
+            "Screen",
+            "Cpu",
+            "Gpu",
+            "Font camera",
+            "Rear camera",
+            "OS",
+            "Sim",
+            "Battery"
+        ]
+    },
+    {
+        "name": "Laptop",
+        "brands":
+        [
+            "Msi",
+            "Dell",
+            "Hp",
+            "Acer",
+            "Lenovo",
+            "Asus",
+            "Macbook"
+        ],
+        "attributes":
+        [
+            "Announced",
+            "Demensions, Weight",
+            "Material",
+            "Screen",
+            "CPU",
+            "GPU",
+            "Ram",
+            "Storage",
+            "Camera",
+            "Os",
+            "Wireless connection",
+            "Connectivity",
+            "Keyboard light",
+            "Battery"
+        ]
+    }
+]

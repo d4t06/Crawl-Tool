@@ -1,70 +1,196 @@
-import { Browser } from "puppeteer-core";
-import { initProductObject } from "./utils";
-import { AttributeInfo, attributeTableOrder } from "./constants/attributeOrder";
+import { Browser, Page } from "puppeteer-core";
+import { generateId, initProductObject } from "./utils";
 
-import * as categories from "./constants/categories.json";
 import * as skipList from "./constants/skip.json";
-import { retry } from "puppeteer-core/lib/esm/third_party/rxjs/rxjs.js";
+import { Category } from "./constants/categories";
+import { AttributeData } from "./constants/attributeOrder";
+import { Config } from "./constants/config";
 
-type Category = (typeof categories)[0];
+type RequireProductData = {
+   name: string;
+   image: string;
+   price: number;
+};
+
+const craw = async (
+   url: string,
+   page: Page,
+   config: Config,
+   targetCategory: Category,
+   data: ProductLink,
+) => {
+   try {
+      console.log(">>> Open tab: ", url);
+
+      await page.goto(url);
+
+      const Selector = ".detail";
+      await page.waitForSelector(Selector).catch((err) => console.log("Time out"));
+
+      const product = initProductObject({
+         category_id: targetCategory.id,
+         name: data.name,
+         image: data.image,
+         price: data.price,
+      });
+
+      /** brand */
+      const targetBrand = targetCategory.brands.find(
+         (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase(),
+      );
+
+      if (targetBrand) {
+         product.brand_id = targetBrand.id;
+      }
+
+      if (data.hasVariant) {
+         /** colors */
+         const colors = await page.$$eval(".box03.color .item", (eles) =>
+            eles.map((el) => el.textContent.trim()),
+         );
+         product.colors = colors;
+
+         /** variant */
+         const variantName = await page.$eval(".box03.group.desk .item.act", (ele) =>
+            ele.textContent.trim(),
+         );
+         product.variants = [variantName];
+      } else {
+         product.colors = ["default"];
+         product.variants = ["default"];
+      }
+
+      /** attributes */
+      const attributes = await page.$$eval(
+         ".box-specifi > a",
+         (eles, [targetCategory, config]: [Category, Config]) => {
+            /**
+             * a
+             * ul .text-specifi
+             *    li
+             */
+
+            const attributes: Attribute[] = [];
+
+            eles.forEach((el) => {
+               const indexAttr = el.getAttribute("data-index");
+
+               const attributeMap: AttributeData[] =
+                  config.attributeTable[`${indexAttr}`];
+               if (!attributeMap) return;
+
+               for (const attributeData of attributeMap) {
+                  const categoryAttr = targetCategory.attributes.find(
+                     (cA) => cA.name_ascii === attributeData.name_ascii,
+                  );
+
+                  if (!categoryAttr) return;
+
+                  const testEles = el.nextElementSibling.querySelectorAll(
+                     "li aside:nth-child(2)",
+                  );
+
+                  let value = "";
+                  attributeData.take.forEach((indexToTake, index) => {
+                     const text = testEles[indexToTake]?.textContent?.trim();
+
+                     if (!text) return;
+
+                     if (index === 0) value += text;
+                     else value += "/n " + text;
+                  });
+
+                  attributes.push({
+                     value,
+                     category_attribute_id: categoryAttr.id,
+                  });
+               }
+            });
+
+            return attributes;
+         },
+         [targetCategory, config],
+      );
+
+      product.attributes = attributes;
+
+      /** sliders */
+      const images = await page.$$eval(
+         ".box_left .gallery-img .owl-carousel .item-img img",
+         (eles) => {
+            const images: string[] = [];
+
+            eles.forEach((el, i) => {
+               if (i > 3) return;
+               images.push(el.src || el.getAttribute("data-src"));
+            });
+
+            return images;
+         },
+      );
+      product.sliders = images;
+
+      /** description */
+      const desc = await page.$$eval(".text-detail > *", (eles) => {
+         let html = "";
+
+         eles.forEach((el, i) => {
+            if (i >= 10) return;
+            // if contain text
+            if (!!el.textContent) {
+               let tag = "p";
+
+               // if heading tag
+               if (el.tagName.toLocaleLowerCase().includes("h")) {
+                  tag = "h5";
+               }
+
+               html += `<${tag}>${el.textContent}</${tag}>`;
+            } else {
+               // check if contain image
+               const images = el.querySelectorAll("img");
+               if (!!images.length) {
+                  images.forEach((img) => {
+                     const src = img.getAttribute("data-src") || img.src;
+
+                     if (src) html += `<img src='${src}' />`;
+                  });
+               }
+            }
+         });
+
+         return html;
+      });
+
+      product.description = desc;
+
+      // await page.evaluate(() => {
+      //    debugger;
+      // });
+
+      await page.close();
+
+      return product;
+   } catch (error) {
+      throw Error(error.message);
+   }
+};
 
 class CrawService {
-   crawProductLinks = async (browser, url) => {
-      try {
-         let page = await browser.newPage();
-
-         await page.goto(url);
-
-         const Selector = ".listproduct";
-         await page.waitForSelector(Selector);
-
-         const productLinks = await page.$$eval(".main-contain", (els) =>
-            els.map((el) => {
-               const href = el ? el.getAttribute("href") : null;
-               const nameEle = el.querySelector("h3");
-               const priceEle = el.querySelector(".price");
-               const imageELe = el.querySelector(
-                  ".item-img img"
-               ) as HTMLImageElement;
-
-               return {
-                  link: "https://www.thegioididong.com" + href,
-                  name: nameEle.textContent.trim(),
-                  image:
-                     imageELe.src || imageELe.getAttribute("data-src") || "",
-                  price:
-                     +priceEle.textContent
-                        .trim()
-                        .replaceAll(".", "")
-                        .slice(0, -1) || 0,
-               } as ProductLink;
-            })
-         );
-         await browser.close();
-
-         return productLinks;
-      } catch (error) {
-         console.log(">>> co loi trong luc mo tab", error);
-      }
-   };
-
-   crawProduct = async (browser: Browser, category: string) => {
+   crawProduct = async (browser: Browser, config: Config) => {
       try {
          const page = await browser.newPage();
-         page.setDefaultTimeout(0);
-
-         // console.log(">>> Open tab", "https://www.thegioididong.com/dtdd");
-         await page.goto("https://www.thegioididong.com/dtdd#c=42&o=13&pi=1");
+         await page.goto(config.page);
 
          const products: Product[] = [];
 
-         const targetCategory = categories.find(
-            (c) => c.name_ascii === category
+         const targetCategory = config.categories.find(
+            (c) => c.name_ascii === config.category,
          );
 
          if (!targetCategory) return;
 
-         const productLinks = await page.$$eval(
+         const productDatas = await page.$$eval(
             ".main-contain",
             (els, [skipList]) => {
                const links: ProductLink[] = [];
@@ -72,16 +198,14 @@ class CrawService {
                els.forEach((el) => {
                   const preOrderEle = el.querySelector(".preorder");
                   if (preOrderEle) return;
+                  const isBuyOnline = el.querySelector("item-txt-online");
+                  if (isBuyOnline) return;
 
                   const variantBoxEle = el.querySelector(".prods-group");
-                  if (!variantBoxEle) return;
-
-                  const href = el ? el.getAttribute("href") : null;
+                  const href = el.getAttribute("href");
                   const nameEle = el.querySelector("h3");
                   const priceEle = el.querySelector(".price");
-                  const imageELe = el.querySelector(
-                     ".item-img img"
-                  ) as HTMLImageElement;
+                  const imageELe = el.querySelector(".item-img img") as HTMLImageElement;
 
                   const productUrl = "https://www.thegioididong.com" + href;
 
@@ -90,139 +214,59 @@ class CrawService {
                   links.push({
                      link: productUrl,
                      name: nameEle.innerText.trim(),
-                     image:
-                        imageELe.src || imageELe.getAttribute("data-src") || "",
+                     image: imageELe.src || imageELe.getAttribute("data-src") || "",
+                     hasVariant: !!variantBoxEle,
                      price:
-                        +priceEle.textContent
-                           .trim()
-                           .replaceAll(".", "")
-                           .slice(0, -1) || 0,
+                        +priceEle.textContent.trim().replaceAll(".", "").slice(0, -1) ||
+                        0,
                   });
                });
 
                return links;
             },
-            [skipList]
+            [skipList],
          );
 
-         for (let index = 0; index < productLinks.length; index++) {
-            if (index > 1) continue;
+         // await page.evaluate(() => {
+         //    debugger;
+         // });
 
-            const productLink = productLinks[index];
+         for (let index = 0; index < productDatas.length; index++) {
+            const productData = productDatas[index];
 
-            console.log(">>> Open tab: ", productLink.link);
-
-            await page.goto(productLink.link);
-
-            const Selector = ".detail";
-            await page
-               .waitForSelector(Selector)
-               .catch((err) => console.log("Time out"));
-
-            const product = initProductObject({
-               category_id: targetCategory.id,
-               name: productLink.name,
-               image: productLink.image,
-               price: productLink.price,
-            });
-
-            /** brand */
-            const targetBrand = targetCategory.brands.find(
-               (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase()
+            const p = await craw(
+               productData.link,
+               page,
+               config,
+               targetCategory,
+               productData,
             );
 
-            if (targetBrand) {
-               product.brand_id = targetBrand.id;
-            }
-
-            /** colors */
-            const colors = await page.$$eval(".box03.color .item", (eles) =>
-               eles.map((el) => el.textContent.trim())
-            );
-            product.colors = colors;
-
-            /** variant */
-            const variantName = await page.$eval(
-               ".box03.group.desk .item.act",
-               (ele) => ele.textContent.trim()
-            );
-            product.variants = [variantName];
-
-            /** attributes */
-            const attributes = await page.$$eval(
-               ".box-specifi > a",
-               (eles, [targetCategory, attributeTableOrder]) => {
-                  /**
-                   * a
-                   * ul .text-specifi
-                   *    li
-                   */
-
-                  const attributes: Attribute[] = [];
-
-                  eles.forEach((el) => {
-                     const indexAttr = el.getAttribute("data-index");
-
-                     const attributeInfos: AttributeInfo[] =
-                        attributeTableOrder[`${indexAttr}`];
-                     if (!attributeInfos) return;
-
-                     for (const attributeInfo of attributeInfos) {
-                        const categoryAttributes =
-                           targetCategory.attributes as Category["attributes"];
-
-                        const categoryAttr = categoryAttributes.find(
-                           (cA) => cA.name_ascii === attributeInfo.name_ascii
-                        );
-
-                        if (!categoryAttr) return;
-
-                        const testEles = el.nextElementSibling.querySelectorAll(
-                           "li aside:nth-child(2)"
-                        );
-
-                        let value = "";
-                        attributeInfo.take.forEach((indexToTake, index) => {
-                           if (index === 0)
-                              value += testEles[indexToTake].textContent.trim();
-                           else
-                              value +=
-                                 "/n " +
-                                 testEles[indexToTake].textContent.trim();
-                        });
-
-                        attributes.push({
-                           value,
-                           category_attribute_id: categoryAttr.id,
-                        });
-                     }
-                  });
-
-                  return attributes;
-               },
-               [targetCategory, attributeTableOrder]
-            );
-
-            product.attributes = attributes;
-
-            /** sliders */
-            const images = await page.$$eval(
-               ".box_left .gallery-img .owl-carousel .item-img img",
-               (eles) => {
-                  return eles.map(
-                     (el) => el.src || el.getAttribute("data-src")
-                  );
-               }
-            );
-            product.sliders = images;
-
-            products.push(product);
-
-            // await page.close();
-            console.log(">>> close tab");
+            products.push(p);
          }
 
          return products;
+      } catch (error) {
+         console.log("service error ", error);
+      }
+   };
+
+   crawOneProduct = async (
+      browser: Browser,
+      config: Config,
+      data: ProductLink,
+   ) => {
+      try {
+         const page = await browser.newPage();
+
+         const targetCategory = config.categories.find(
+            (c) => c.name_ascii === config.category,
+         );
+
+         if (!targetCategory) return;
+
+         const p = await craw(data.link, page, config, targetCategory, data);
+         return [p];
       } catch (error) {
          console.log("service error ", error);
       }

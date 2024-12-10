@@ -3,6 +3,7 @@ type ProductLink = {
    name: string;
    image: string;
    price: number;
+   hasVariant: boolean;
 };
 
 type Product = {
@@ -15,6 +16,7 @@ type Product = {
    image: string;
    sliders: string[];
    price: number;
+   description: string;
 };
 
 type Color = {

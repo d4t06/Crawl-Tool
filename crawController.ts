@@ -1,21 +1,26 @@
 import { Browser } from "puppeteer-core";
 import crawServices from "./crawServices";
 import { writeJsonFile } from "./utils";
+import * as appConfig from "./constants/config";
 
-// const tgdd = {
-//    dtdd: "https://www.thegioididong.com/dtdd#c=42&o=13&pi=1",
-//    laptop: "https://www.thegioididong.com/laptop#c=44&o=9&pi=2",
-// };
+const config = appConfig.baseConfig;
 
 const CrawController = async (browser: Browser) => {
    try {
       if (!browser) return;
 
-      const products = await crawServices.crawProduct(browser, "mobile");
+      const products = await crawServices.crawProduct(browser, config);
+      // const products = await crawServices.crawOneProduct(browser, config, {
+      //    image: "",
+      //    name: "test",
+      //    price: 999,
+      //    hasVariant: false,
+      //    link: "https://www.thegioididong.com/laptop/acer-aspire-a315-44p-r9w8-r7-nxksjsv002",
+      // });
 
       browser.close();
 
-      writeJsonFile(products, "products");
+      if (products) writeJsonFile(products, config.name);
    } catch (error) {
       console.log(error);
       browser?.close();
