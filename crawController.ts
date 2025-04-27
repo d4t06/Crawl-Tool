@@ -18,7 +18,7 @@ const CrawController = async (browser: Browser) => {
       //    link: "https://www.thegioididong.com/laptop/acer-aspire-a315-44p-r9w8-r7-nxksjsv002",
       // });
 
-      if (products) writeJsonFile(products, config.name);
+      if (products) writeJsonFile(products, config.name+"_"+config.category);
 
       browser.close();
    } catch (error) {

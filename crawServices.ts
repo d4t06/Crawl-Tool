@@ -11,7 +11,7 @@ const craw = async (
    page: Page,
    config: Config,
    targetCategory: Category,
-   data: ProductLink
+   data: ProductLink,
 ) => {
    try {
       console.log(">>> Open tab: ", url);
@@ -30,7 +30,7 @@ const craw = async (
 
       /** brand */
       const targetBrand = targetCategory.brands.find(
-         (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase()
+         (b) => b.name_ascii === product.name.split(" ")[0].toLowerCase(),
       );
 
       if (targetBrand) {
@@ -40,13 +40,13 @@ const craw = async (
       if (data.hasVariant) {
          /** colors */
          const colors = await page.$$eval(".box03.color .item", (eles) =>
-            eles.map((el) => el.textContent.trim())
+            eles.map((el) => el.textContent.trim()),
          );
          product.colors = colors;
 
          /** variant */
          const variantName = await page.$eval(".box03.group.desk .item.act", (ele) =>
-            ele.textContent.trim()
+            ele.textContent.trim(),
          );
          product.variants = [variantName];
       } else {
@@ -75,13 +75,13 @@ const craw = async (
 
                for (const attributeData of attributeMap) {
                   const categoryAttr = targetCategory.attributes.find(
-                     (cA) => cA.name_ascii === attributeData.name_ascii
+                     (cA) => cA.name_ascii === attributeData.name_ascii,
                   );
 
                   if (!categoryAttr) return;
 
                   const testEles = el.nextElementSibling.querySelectorAll(
-                     "li aside:nth-child(2)"
+                     "li aside:nth-child(2)",
                   );
 
                   let value = "";
@@ -103,7 +103,7 @@ const craw = async (
 
             return attributes;
          },
-         [targetCategory, config]
+         [targetCategory, config],
       );
 
       product.attributes = attributes;
@@ -115,12 +115,12 @@ const craw = async (
             const images: string[] = [];
 
             eles.forEach((el, i) => {
-               if (i > 3) return;
+               if (i >= 3) return;
                images.push(el.src || el.getAttribute("data-src"));
             });
 
             return images;
-         }
+         },
       );
       product.sliders = images;
 
@@ -129,7 +129,7 @@ const craw = async (
          let html = "";
 
          eles.forEach((el, i) => {
-            if (i >= 10) return;
+            if (i >= 7) return;
             // if contain text
             if (!!el.textContent) {
                let tag = "p";
@@ -179,7 +179,7 @@ class CrawService {
          const products: Product[] = [];
 
          const targetCategory = config.categories.find(
-            (c) => c.name_ascii === config.category
+            (c) => c.name_ascii === config.category,
          );
 
          if (!targetCategory) return [];
@@ -192,8 +192,6 @@ class CrawService {
                els.forEach((el) => {
                   const preOrderEle = el.querySelector(".preorder");
                   if (preOrderEle) return;
-                  const isBuyOnline = el.querySelector("item-txt-online");
-                  if (isBuyOnline) return;
 
                   const variantBoxEle = el.querySelector(".prods-group");
                   const href = el.getAttribute("href");
@@ -218,14 +216,11 @@ class CrawService {
 
                return links;
             },
-            [skipList]
+            [skipList],
          );
 
-         // await page.evaluate(() => {
-         //    debugger;
-         // });
-
          for (let index = 0; index < productDatas.length; index++) {
+            if (index >= 5) continue;
             const productData = productDatas[index];
 
             const p = await craw(
@@ -233,7 +228,7 @@ class CrawService {
                page,
                config,
                targetCategory,
-               productData
+               productData,
             );
 
             products.push(p);
@@ -250,7 +245,7 @@ class CrawService {
          const page = await browser.newPage();
 
          const targetCategory = config.categories.find(
-            (c) => c.name_ascii === config.category
+            (c) => c.name_ascii === config.category,
          );
 
          if (!targetCategory) return;

@@ -1,5 +1,5 @@
 import * as attributeTable from "./attributeOrder";
-import { baseCategory, Category } from "./categories";
+import { baseCategory, Category, hdMobileCategory } from "./categories";
 
 export type Config = {
 	name: string;
@@ -11,17 +11,17 @@ export type Config = {
 
 export const baseConfig: Config = {
 	name: "base",
-	category: "mobile",
-	page: "https://www.thegioididong.com/dtdd",
-	attributeTable: attributeTable.mobile,
+	category: "laptop",
+	page: "https://www.thegioididong.com/laptop-apple-macbook",
+	attributeTable: attributeTable.laptop,
 	categories: baseCategory,
 };
 
 export const hdMobileConfig: Config = {
 	name: "hd-mobile",
-	category: "mobile",
-	page: "https://www.thegioididong.com/dtdd",
-	attributeTable: attributeTable.mobile,
+	category: "laptop",
+	page: "https://www.thegioididong.com/laptop-apple-macbook",
+	attributeTable: attributeTable.laptop,
 	categories: baseCategory,
 };
 
